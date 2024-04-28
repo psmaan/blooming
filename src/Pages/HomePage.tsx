@@ -1,4 +1,3 @@
-import { transform } from "framer-motion";
 import ThreeDVisual from "../Components/3DComponent";
 import Header from "../Components/Header";
 
@@ -15,10 +14,7 @@ const Homepage: React.FC = () => {
           className="absolute right-0 w-4/6 rotate font-recoleta pt-80   font-bold tb:pr-10 pr-4 dk:pr-20 h-screen overflow-y-scroll"
         >
           <div className=""></div>
-          <h1
-            className="text-[#B2FF02]  text-8xl perspective-style  text-end "
-            
-          >
+          <h1 className="text-[#B2FF02]  text-8xl perspective-style  text-end ">
             BLOOMING DESIGN IS A BRANDING, PACKAGING AND GRAPHIC DESIGN STUDIO.
             WE MERGE TRADITION WITH INNOVATION TO PRODUCE FUNCTIONAL AND
             ENGAGING SOLUTIONS THAT CONNECT YOU TO YOUR CUSTOMERS. BY
