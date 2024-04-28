@@ -1,5 +1,4 @@
 import ThreeDVisual from "../Components/3DComponent";
-import ThreeDComponent from "../Components/3DComponent";
 import Header from "../Components/Header";
 
 const Homepage: React.FC = () => {

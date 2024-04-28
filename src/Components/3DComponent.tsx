@@ -60,11 +60,7 @@ const ThreeDVisual: React.FC = () => {
         cam: { zoom: 6 },
       },
       d = Date.now();
-    let a: any;
-    let i: any;
-    let r: any;
-    let o: any;
-    let l: any;
+
     const f = () => {
       requestAnimationFrame(f);
       TweenMax.to(camera.position, 1, { z: c.cam.zoom + 5 }); // Corrected from o.position to camera.position
@@ -107,30 +103,6 @@ const ThreeDVisual: React.FC = () => {
         e < 1025 &&
           (t.removeEventListener("mousemove", p, !1),
           n.addEventListener("scroll", g, !1));
-    };
-    const y = () => {
-      const e = window.innerWidth;
-      let t, n;
-      return (
-        e >= 1025 && ((t = [0, 1, 11, 3, 5, 6, 7, 8, 9, 10, 12]), (n = [])),
-        e < 1025 && ((t = [0, 1, 2, 12]), (n = [3, 4, 5, 6, 7, 8, 9, 10, 11])),
-        { numLoad: t, numMenu: n }
-      );
-    };
-    const w = (e: any, t: any) => {
-      const n = [];
-      if (0 !== e.length)
-        for (let o = 0; o < e.length; o++)
-          n[o] = o !== e.length - 1 ? t * (o + 1) : t * (o + 2);
-      return n;
-    };
-    const h = (e: any, t: any, n: any) => {
-      for (let o = 0; o < t.length; o++)
-        setTimeout(() => {
-          13 !== t[o] &&
-            (e[t[o]].style.opacity = Math.abs(e[t[o]].style.opacity - 1)),
-            1 === t[o] && e[1].classList.add("down");
-        }, n[o]);
     };
 
     const mesh = new THREE.Object3D();

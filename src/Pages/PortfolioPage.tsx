@@ -1,12 +1,5 @@
 import Header from "../Components/Header";
-import { motion } from "framer-motion";
-import { useRef } from "react";
-import { useFollowPointer } from "../functions/followPointer";
-import MoreButton from "../Components/MoreButton";
-import Eyeball from "../Components/EyeBallButton";
-import HoverMoveButton from "../Components/EyeBallButton";
 import EyeBallButton from "../Components/EyeBallButton";
-import InfiniteBanner from "../Components/InfiniteBanner";
 const PortfolioPage: React.FC = () => {
   return (
     <div className="w-full tb:px-10 px-4 dk:px-20 dk:py-4 flex flex-col text-white  min-h-screen bg-black">
