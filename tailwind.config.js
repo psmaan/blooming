@@ -7,11 +7,35 @@ export default {
       dk: "1200px",
     },
     extend: {
+      textStrokeWidth: {
+        // Define custom property for stroke width
+        2: "2px",
+      },
+      textStrokeColor: {
+        // Define custom property for stroke color
+        white: "#FFFFFF",
+        green: "#B2FF02",
+      },
       fontFamily: {
         akhzid: "Akzid",
         recoleta: "Poppins",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities, theme, e }) {
+      const newUtilities = {};
+      Object.entries(theme("textStrokeWidth")).forEach(([key, value]) => {
+        Object.entries(theme("textStrokeColor")).forEach(
+          ([colorKey, color]) => {
+            const className = `.text-stroke-${key}-${colorKey}`; // e.g., text-stroke-2-black
+            newUtilities[className] = {
+              "text-shadow": `0 0 ${value} ${color}, 0 0 ${value} ${color}, 0 0 ${value} ${color}, 0 0 ${value} ${color}`,
+            };
+          }
+        );
+      });
+      addUtilities(newUtilities, ["responsive"]);
+    },
+  ],
 };

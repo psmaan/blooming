@@ -86,23 +86,13 @@ const ThreeDVisual: React.FC = () => {
         b_color: Math.abs((4 * e.clientY) / t.offsetHeight - 0.2),
       };
     };
-    const g = () => {
-      const e = document.getElementById("mainText");
-      if (!e) return;
-      let t = (6 * e.scrollTop) / (e.scrollHeight - e.clientHeight);
-      c.rgb = { r_color: Math.abs(t - 6), g_color: t, b_color: 0.2 };
-    };
+
     const v = () => {
       const e = window.innerWidth;
       let t = document.documentElement;
-      let n = document.getElementById("mainText");
-      if (!n) return;
-      e >= 1025 &&
-        (t.addEventListener("mousemove", p, !1),
-        n.removeEventListener("scroll", g, !1)),
-        e < 1025 &&
-          (t.removeEventListener("mousemove", p, !1),
-          n.addEventListener("scroll", g, !1));
+
+      e >= 1025 && t.addEventListener("mousemove", p, !1),
+        e < 1025 && t.removeEventListener("mousemove", p, !1);
     };
 
     const mesh = new THREE.Object3D();
@@ -136,7 +126,7 @@ const ThreeDVisual: React.FC = () => {
 
     // Cleanup
     return () => {
-      mountRef.current!.removeChild(renderer.domElement);
+      if (mountRef.current) mountRef.current.removeChild(renderer.domElement);
     };
   }, []);
 
