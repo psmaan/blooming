@@ -1,6 +1,5 @@
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import { images } from "../assets/Images";
 import backgroundImage from "/Images&logo/unibrain.png";
 
 const UnibrainPage: React.FC = () => {
