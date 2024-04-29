@@ -62,7 +62,7 @@ const PortfolioPage: React.FC = () => {
         </div>
       </div>
       {/* What do we Offer */}
-      <div className="mt-40 flex flex-col gap-10">
+      <div className="mt-40 flex flex-col gap-10 pb-20">
         <div>
           <h4 className="text-6xl">
             <span className="text-[#b2ff02]">What do we</span> offer
@@ -125,43 +125,7 @@ const PortfolioPage: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* Footer */}
-      {/* <div className="flex w-full flex-col gap-20  mt-40">
-        <hr className="w-full border-[#b2ff02]" />
-        <div className="flex gap-20 justify-between py-20 ">
-          <div className="  ">
-            <i>{images.footerLogo}</i>
-          </div>
-          <div className="flex gap-10">
-            <div className="flex gap-2 flex-col font-akhzid">
-              <span>Our work</span>
-              <div className="flex flex-col">
-                <span>[UX/UI]</span> <span>[PRINT DESIGN]</span>
-              </div>
-            </div>
-            <div className="flex gap-2 flex-col font-akhzid">
-              <span>Vancouver / Canada</span>
-              <div className="flex flex-col">
-                <span>hello@bloomingdesign.ca</span> <span>778-222-2122</span>
-              </div>
-            </div>
-            <div className="flex gap-2 flex-col font-akhzid">
-              <span>Let’s be Friends</span>
-              <div className="flex gap-2">
-                <button>{images.dribble}</button>
-                <button>{images.behance}</button>
-                <button>{images.instagram}</button>
-              </div>
-            </div>
-            <div className="flex gap-2 flex-col font-akhzid">
-              <span>Tell us your needs</span>
-              <div className="flex flex-col">
-                <span>hello@bloomingdesign.ca</span> <span>778-222-2122</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+
       <Footer></Footer>
     </div>
   );
