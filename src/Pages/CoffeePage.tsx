@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import backgroundImage from "/Images&logo/coffee1.png";
 
@@ -77,6 +78,7 @@ const CoffeePage: React.FC = () => {
           <hr className="w-6 border border-[#b2ff02]" />
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

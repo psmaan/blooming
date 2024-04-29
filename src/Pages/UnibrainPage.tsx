@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { images } from "../assets/Images";
 import backgroundImage from "/Images&logo/unibrain.png";
@@ -68,41 +69,7 @@ const UnibrainPage: React.FC = () => {
           <hr className="w-6 border border-[#b2ff02]" />
         </div>
       </div>
-      <div className="w-full tb:px-10 px-4 dk:px-20 font-recoleta flex flex-col text-sm">
-        <hr className="border-[#b2ff02] " />
-        <div className="flex items-center justify-between py-20 flex-wrap">
-          <div>{images.footerLogo}</div>
-          <div className="flex flex-col gap-2">
-            <h2>Our work</h2>
-            <div className="flex flex-col">
-              <span>[UI/UX]</span>
-              <span>[PRINT DESIGN]</span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h2>Vancouver / Canada</h2>
-            <div className="flex flex-col">
-              <span>hello@bloomingdesign.ca</span>
-              <span>778-222-2122</span>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h2>Let’s be Friends</h2>
-            <div className="flex gap-2">
-              <i>{images.dribble}</i>
-              <i>{images.behance}</i>
-              <i>{images.instagram}</i>
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <h2>Tell us your needs</h2>
-            <div className="flex gap-2 items-center">
-              <h2 className="text-[#b2ff02] text-4xl ">Contact </h2>
-              <i>{images.headUp}</i>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Footer></Footer>
     </div>
   );
 };

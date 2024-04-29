@@ -1,5 +1,6 @@
 import Header from "../Components/Header";
 import EyeBallButton from "../Components/EyeBallButton";
+import Footer from "../Components/Footer";
 const PortfolioPage: React.FC = () => {
   return (
     <div className="w-full tb:px-10 px-4 dk:px-20 dk:py-4 flex flex-col text-white  min-h-screen bg-black">
@@ -161,6 +162,7 @@ const PortfolioPage: React.FC = () => {
           </div>
         </div>
       </div> */}
+      <Footer></Footer>
     </div>
   );
 };

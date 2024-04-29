@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import backgroundImage from "/Images&logo/adorable1.png";
 const AdorablePage: React.FC = () => {
@@ -102,6 +103,7 @@ const AdorablePage: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

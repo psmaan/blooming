@@ -100,11 +100,11 @@ const ThreeDVisual: React.FC = () => {
       const n = document.getElementById("mainText") as HTMLElement;
 
       e >= 1025 &&
-        (t.addEventListener("mousemove", p, !1),
+        (t && t.addEventListener("mousemove", p, !1),
         n && n.removeEventListener("scroll", g, !1)),
         e < 1025 &&
-          (t.removeEventListener("mousemove", p, !1),
-          n.addEventListener("scroll", g, !1));
+          (t && t.removeEventListener("mousemove", p, !1),
+          n && n.addEventListener("scroll", g, !1));
     };
 
     const mesh = new THREE.Object3D();
