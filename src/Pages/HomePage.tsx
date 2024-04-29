@@ -10,11 +10,10 @@ const Homepage: React.FC = () => {
       <div className="flex w-full justify-start items-start ">
         <ThreeDVisual></ThreeDVisual>
         <div
-          style={{}}
-          className="absolute right-0 w-4/6 rotate font-recoleta pt-80   font-bold tb:pr-10 pr-4 dk:pr-20 h-screen overflow-y-scroll"
+          id="mainText"
+          className="absolute right-0 w-full tb:w-5/6 tbl:w-4/6 rotate font-recoleta pt-80   font-bold tb:pr-10 pr-4 dk:pr-20 h-screen overflow-y-auto overflow-x-hidden"
         >
-          <div className=""></div>
-          <h1 className="text-[#B2FF02]  text-8xl perspective-style  text-end ">
+          <h1 className="text-[#B2FF02] text-5xl tb:text-8xl dk:text-8xl perspective-style  text-end ">
             BLOOMING DESIGN IS A BRANDING, PACKAGING AND GRAPHIC DESIGN STUDIO.
             WE MERGE TRADITION WITH INNOVATION TO PRODUCE FUNCTIONAL AND
             ENGAGING SOLUTIONS THAT CONNECT YOU TO YOUR CUSTOMERS. BY

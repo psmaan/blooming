@@ -6,8 +6,9 @@ const ThreeDVisual: React.FC = () => {
   const mountRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const width = window.innerWidth / 1.5;
-    const height = window.innerHeight > width ? width + 50 : window.innerHeight;
+    const width = window.innerWidth < 700 ? window.innerWidth : 1000;
+    const height =
+      window.innerHeight > width ? width + 50 : window.innerHeight - 100;
 
     // Create and configure the renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -86,13 +87,24 @@ const ThreeDVisual: React.FC = () => {
         b_color: Math.abs((4 * e.clientY) / t.offsetHeight - 0.2),
       };
     };
+    const g = () => {
+      const e = document.getElementById("mainText");
+      if (!e) return;
+      const t = (6 * e.scrollTop) / (e.scrollHeight - e.clientHeight);
+      c.rgb = { r_color: Math.abs(t - 6), g_color: t, b_color: 0.2 };
+    };
 
     const v = () => {
       const e = window.innerWidth;
-      let t = document.documentElement;
+      const t = document.documentElement;
+      const n = document.getElementById("mainText") as HTMLElement;
 
-      e >= 1025 && t.addEventListener("mousemove", p, !1),
-        e < 1025 && t.removeEventListener("mousemove", p, !1);
+      e >= 1025 &&
+        (t.addEventListener("mousemove", p, !1),
+        n && n.removeEventListener("scroll", g, !1)),
+        e < 1025 &&
+          (t.removeEventListener("mousemove", p, !1),
+          n.addEventListener("scroll", g, !1));
     };
 
     const mesh = new THREE.Object3D();
@@ -130,7 +142,11 @@ const ThreeDVisual: React.FC = () => {
     };
   }, []);
 
-  return <div className="w-min" ref={mountRef} />;
+  return (
+    <div className=" absolute -left-20 top-20 tb:absolute tb:-left-80 tb:top-20 tbl:absolute tbl:-left-40 tbl:top-20  overflow-hidden">
+      <div className="w-min" ref={mountRef} />
+    </div>
+  );
 };
 
 export default ThreeDVisual;

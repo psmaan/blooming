@@ -4,7 +4,8 @@ export default {
   theme: {
     screens: {
       tb: "700px",
-      dk: "1200px",
+      tbl: "1000px",
+      dk: "1224px",
     },
     extend: {
       textStrokeWidth: {

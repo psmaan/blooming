@@ -70,11 +70,7 @@ const Header: React.FC = () => {
   }, [menu]);
   return (
     <div
-      className={
-        menu
-          ? "text-white flex  flex-col w-full z-50  py-4 max-h-screen "
-          : "text-white flex  flex-col w-full z-50  py-4 max-h-screen"
-      }
+      className={"text-white flex  flex-col w-full z-50  py-4 max-h-screen "}
     >
       <div className="flex z-20 w-full">
         {menu ? (
@@ -106,11 +102,12 @@ const Header: React.FC = () => {
         </div>
       </div>
       {menu ? (
-        <div className="flex absolute top-0 left-0 w-full   bg-black z-10">
+        <div className="flex absolute top-0 left-0 w-full h-full  z-10">
+          <div className="absolute w-full h-screen top-0 left-0 bg-black"></div>
           <div ref={animRef} className=" ">
             <ThreeDVisual></ThreeDVisual>
           </div>
-          <div className="absolute right-0 w-3/5 font-recoleta  pt-72  tb:pr-10 pr-4 dk:pr-20 h-min overflow-hidden">
+          <div className="absolute right-0 w-full tb:w-5/6 tbl:w-4/6 rotate font-recoleta pt-80   font-bold tb:pr-10 pr-4 dk:pr-20 h-screen overflow-y-auto overflow-x-hidden">
             <div
               className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
               ref={ourWorkRef}
@@ -120,7 +117,7 @@ const Header: React.FC = () => {
               </label>
               <Link
                 to={"/portfolio"}
-                className=" text-8xl font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                className=" text-5xl tb:text-8xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
               >
                 OUR WORK
               </Link>
@@ -134,7 +131,7 @@ const Header: React.FC = () => {
               </label>
               <Link
                 to={"/vlproject"}
-                className=" text-8xl font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                className=" text-5xl tb:text-8xl dk:text-8xl whitespace-nowrap  font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
               >
                 NFT SERVICE
               </Link>
@@ -148,7 +145,7 @@ const Header: React.FC = () => {
               </label>
               <Link
                 to={"/unibrain"}
-                className=" text-8xl font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                className=" text-5xl tb:text-8xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
               >
                 CULTURE
               </Link>
@@ -162,7 +159,7 @@ const Header: React.FC = () => {
               </label>
               <Link
                 to={"/coffee"}
-                className=" text-8xl font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                className=" text-5xl tb:text-8xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
               >
                 HIRE US
               </Link>
