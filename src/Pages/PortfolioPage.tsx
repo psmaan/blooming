@@ -3,7 +3,7 @@ import EyeBallButton from "../Components/EyeBallButton";
 import Footer from "../Components/Footer";
 const PortfolioPage: React.FC = () => {
   return (
-    <div className="w-full tb:px-10 px-4 dk:px-20 dk:py-4 flex flex-col text-white  min-h-screen bg-black">
+    <div className="w-full tb:px-10 px-4 dk:px-20  dk:py-4 flex flex-col text-white  min-h-screen bg-black">
       <Header></Header>
 
       {/* Projectt Showcase */}
@@ -68,14 +68,14 @@ const PortfolioPage: React.FC = () => {
       </div>
       {/* Brands */}
       <div className="flex flex-row justify-between items-center">
-        <div className="flex-1 flex flex-col  gap-4">
+        <div className="flex-2 dk:flex-1 flex flex-col  gap-4 max-w-[500px] z-10 tbl:max-w-[600px] dk:max-w-[800px]">
           <h4 className="text-6xl  ">
             We build <span className="text-[#b2ff02]">brands</span> and{" "}
             <span className="text-[#b2ff02]">solutions</span> over 7 years
           </h4>
           <hr className="border-[#b2ff02] w-1/3" />
         </div>
-        <div className="flex-1 flex items-center justify-end -mr-20">
+        <div className=" absolute right-0  flex items-center justify-end   ">
           <img src="/Images&logo/animation.png" alt="" width={"50%"} />
         </div>
       </div>
