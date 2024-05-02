@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import ThreeDVisual from "../Components/3DComponent";
 import Header from "../Components/Header";
 // Function to prevent scrolling
