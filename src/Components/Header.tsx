@@ -93,7 +93,11 @@ const Header: React.FC = () => {
           </button>
         )}
         <div className="flex-1  flex items-center dk:justify-center justify-end">
-          <h1>{images.logo}</h1>
+          <img
+            src="/Images&logo/bloomingLogo.png"
+            alt=""
+            className="w-3/4 max-w-40"
+          />
         </div>
         <div className="flex-1 hidden dk:flex justify-end font-akhzid  items-center">
           <span className="mr-4 ">Our work:</span>
@@ -117,7 +121,7 @@ const Header: React.FC = () => {
               </label>
               <Link
                 to={"/portfolio"}
-                className=" text-5xl tb:text-8xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                className=" text-4xl tb:text-6xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
               >
                 OUR WORK
               </Link>
@@ -131,7 +135,7 @@ const Header: React.FC = () => {
               </label>
               <Link
                 to={"/vlproject"}
-                className=" text-5xl tb:text-8xl dk:text-8xl whitespace-nowrap  font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap  font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
               >
                 NFT SERVICE
               </Link>
@@ -145,7 +149,7 @@ const Header: React.FC = () => {
               </label>
               <Link
                 to={"/unibrain"}
-                className=" text-5xl tb:text-8xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
               >
                 CULTURE
               </Link>
@@ -159,7 +163,7 @@ const Header: React.FC = () => {
               </label>
               <Link
                 to={"/coffee"}
-                className=" text-5xl tb:text-8xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
               >
                 HIRE US
               </Link>

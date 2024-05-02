@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Blooming</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +20,20 @@
     </script>
     <style>
       .perspective-style {
-        transform: skewY(-5deg) rotateY(20deg);
+        perspective: 1000px;
+      }
+      .innerPrep {
+        transition: 0.3s;
+        transform: rotateY(-18deg);
+      }
+      #mainText::-webkit-scrollbar {
+        display: none;
+      }
+      .portfolioImg:hover {
+        clip-path: polygon(0 9%, 100% 0%, 100% 90%, 0 100%);
+      }
+      .gradientDiv {
+        background: linear-gradient(to bottom, #00000000, #383838);
       }
     </style>
   </head>

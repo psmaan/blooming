@@ -19,7 +19,7 @@ export default {
       },
       fontFamily: {
         akhzid: "Akzid",
-        recoleta: "Poppins",
+        recoleta: "Recoleta",
       },
     },
   },

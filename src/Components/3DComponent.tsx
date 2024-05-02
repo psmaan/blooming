@@ -7,8 +7,7 @@ const ThreeDVisual: React.FC = () => {
 
   useEffect(() => {
     const width = window.innerWidth < 700 ? window.innerWidth : 1000;
-    const height =
-      window.innerHeight > width ? width + 50 : window.innerHeight - 100;
+    const height = window.innerHeight > width ? width + 50 : window.innerHeight;
 
     // Create and configure the renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -143,7 +142,7 @@ const ThreeDVisual: React.FC = () => {
   }, []);
 
   return (
-    <div className=" absolute -left-20 top-20 tb:absolute tb:-left-80 tb:top-20 tbl:absolute tbl:-left-40 tbl:top-20  overflow-hidden">
+    <div className=" absolute -left-40 top-0 tb:absolute tb:-left-[400px]  tbl:absolute tbl:-left-72 pt-20 tb:pt-0 dk:absolute dk:left-0  overflow-hidden">
       <div className="w-min" ref={mountRef} />
     </div>
   );

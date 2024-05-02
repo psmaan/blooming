@@ -10,7 +10,13 @@ const PortfolioPage: React.FC = () => {
       <div className="flex mt-20 flex-col  items-center justify-center w-full gap-10">
         <div className="grid grid-cols-1 dk:grid-cols-2 gap-x-40  w-full gap-y-28 dk:grid-rows-2">
           <div className="flex flex-col items-center justify-center gap-10">
-            <img src="/Images&logo/Porfolio1.png" alt="" />
+            <div className="">
+              <img
+                src="/Images&logo/Porfolio1.png"
+                alt=""
+                className="portfolioImg"
+              />
+            </div>
             <div className="flex flex-col gap-1 items-center justify-center">
               <h2 className="font-recoleta text-xl">Vancouver Laptop</h2>
               <span className="font-akhzid text-sm font-thin">
@@ -19,7 +25,11 @@ const PortfolioPage: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-10">
-            <img src="/Images&logo/Portfolio2.png" alt="" />
+            <img
+              src="/Images&logo/Portfolio2.png"
+              alt=""
+              className=" portfolioImg"
+            />
             <div className="flex flex-col gap-1 items-center justify-center">
               <h2 className="font-recoleta text-xl">Adorable chocolate</h2>
               <span className="font-akhzid text-sm font-thin">
@@ -28,7 +38,11 @@ const PortfolioPage: React.FC = () => {
             </div>
           </div>{" "}
           <div className="flex flex-col items-center justify-center gap-10">
-            <img src="/Images&logo/Portfolio3.png" alt="" />
+            <img
+              src="/Images&logo/Portfolio3.png"
+              alt=""
+              className=" portfolioImg"
+            />
             <div className="flex flex-col gap-1 items-center justify-center">
               <h2 className="font-recoleta text-xl">Quayqoffee</h2>
               <span className="font-akhzid text-sm font-thin">
@@ -37,7 +51,11 @@ const PortfolioPage: React.FC = () => {
             </div>
           </div>{" "}
           <div className="flex flex-col items-center justify-center gap-10">
-            <img src="/Images&logo/Portfolio4.png" alt="" />
+            <img
+              src="/Images&logo/Portfolio4.png"
+              alt=""
+              className="portfolioImg"
+            />
             <div className="flex flex-col gap-1 items-center justify-center">
               <h2 className="font-recoleta text-xl">UniBrain caps</h2>
               <span className="font-akhzid text-sm font-thin">
