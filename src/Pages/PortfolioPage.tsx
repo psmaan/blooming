@@ -67,20 +67,16 @@ const PortfolioPage: React.FC = () => {
         <EyeBallButton></EyeBallButton>
       </div>
       {/* Brands */}
-      <div className="flex flex-row justify-between min-h-[500px] dk:items-center overflow-hidden  items-end">
-        <div className="flex-2 dk:flex-1 flex flex-col  gap-4 max-w-[500px]  z-10 tbl:max-w-[600px] dk:max-w-[800px]">
+      <div className="flex flex-row items-end tbl:items-center  h-[400px] ">
+        <div className="flex flex-col z-10 gap-4 tbl:w-[500px] w-full">
           <h4 className="text-4xl tb:text-6xl  ">
             We build <span className="text-[#b2ff02]">brands</span> and{" "}
             <span className="text-[#b2ff02]">solutions</span> over 7 years
           </h4>
           <hr className="border-[#b2ff02] w-1/3" />
         </div>
-        <div className="dk:-right-20 tb:-right-10 -right-4 absolute ">
-          <img
-            src="/Images&logo/animation.png"
-            alt=""
-            className="max-h-[600px] dk:max-h-[1000px]"
-          />
+        <div className="absolute right-0">
+          <img src="/Images&logo/animation.png" alt="" />
         </div>
       </div>
       {/* What do we Offer */}

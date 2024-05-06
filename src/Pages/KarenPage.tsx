@@ -95,9 +95,9 @@ const KarenPage: React.FC = () => {
         </div>
       </div>
       <div className=" ">
-        <div className="flex flex-col items-center">
-          <div>
-            <img src="/Images&logo/karen5.png" alt="" />
+        <div className="flex flex-col w-full items-center">
+          <div className="w-full">
+            <img src="/Images&logo/karen5.png" alt="" className="w-full" />
           </div>
 
           <div className="font-akhzid flex items-center">
@@ -110,29 +110,29 @@ const KarenPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="tb:px-10 px-4 dk:px-20 flex items-center flex-col ">
+      <div className="tb:px-10 px-4 dk:px-20 flex items-center flex-col  ">
         <div className="flex flex-col tb:flex-row  tb:gap-10">
-          <div className="flex flex-col gap-10 p-8">
+          <div className="flex flex-row tb:flex-col gap-2  tb:gap-10 tb:p-8">
             <div>
               <img src="/Images&logo/karen8.png" alt="" />
             </div>
-            <div>
+            <div className="mt-10 tb:mt-0">
               <img src="/Images&logo/karen9.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-10  p-8 dk:mt-80">
+          <div className="flex flex-row tb:flex-col gap-2 tb:gap-10  tb:p-8 dk:mt-80">
             <div>
               <img src="/Images&logo/karen7.png" alt="" />
             </div>
-            <div>
+            <div className="mt-10 tb:mt-0">
               <img src="/Images&logo/karen10.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-10  p-8 dk:mt-40">
+          <div className="flex flex-row tb:flex-col gap-2 tb:gap-10  tb:p-8 dk:mt-40">
             <div>
               <img src="/Images&logo/karen6.png" alt="" />
             </div>
-            <div>
+            <div className="mt-10 tb:mt-0">
               <img src="/Images&logo/karen11.png" alt="" />
             </div>
           </div>

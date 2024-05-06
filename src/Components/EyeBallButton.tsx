@@ -22,7 +22,7 @@ const EyeBallButton: React.FC = () => {
   return (
     <div
       ref={boundaryRef}
-      className="relative w-52 h-52 flex items-center justify-center"
+      className="relative w-52 h-52 flex items-center justify-center z-10"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => {
         x.set(0);

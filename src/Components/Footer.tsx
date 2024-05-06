@@ -5,7 +5,9 @@ const Footer: React.FC = () => {
     <div className="w-full font-recoleta flex flex-col text-sm">
       <hr className="border-[#b2ff02] " />
       <div className=" grid grid-cols-2 tb:grid tb:grid-cols-2 gap-14  tb:gap-20 dk:flex dk:items-center dk:justify-between py-20 ">
-        <div className="tb:col-span-2 col-span-2">{images.footerLogo}</div>
+        <div className="tb:col-span-2 col-span-2">
+          <img src="/Images&logo/footerLogo.png" alt="" />
+        </div>
         <div className="flex flex-col gap-2">
           <h2>Our work</h2>
           <div className="flex flex-col">
