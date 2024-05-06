@@ -7,6 +7,7 @@ import AdorablePage from "./Pages/AdorablePage";
 import UnibrainPage from "./Pages/UnibrainPage";
 import CoffeePage from "./Pages/CoffeePage";
 import KarenPage from "./Pages/KarenPage";
+import NFTPage from "./Pages/NFTPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route Component={UnibrainPage} path="/unibrain"></Route>
           <Route Component={CoffeePage} path="/coffee"></Route>
           <Route Component={KarenPage} path="/karen"></Route>
+          <Route Component={NFTPage} path="/nft"></Route>
         </Routes>
       </BrowserRouter>
     </>

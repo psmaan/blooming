@@ -111,7 +111,7 @@ const Header: React.FC = () => {
           <div ref={animRef} className=" ">
             <ThreeDVisual></ThreeDVisual>
           </div>
-          <div className="absolute right-0 w-full tb:w-5/6 tbl:w-4/6 rotate font-recoleta pt-80   font-bold tb:pr-10 pr-4 dk:pr-20 h-screen overflow-y-auto overflow-x-hidden">
+          <div className="absolute right-0 w-full tb:w-5/6 tbl:w-4/6 rotate font-recoleta pt-52   font-bold tb:pr-10 pr-4 dk:pr-20 h-screen overflow-y-auto overflow-x-hidden">
             <div
               className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
               ref={ourWorkRef}
@@ -168,6 +168,11 @@ const Header: React.FC = () => {
                 HIRE US
               </Link>
             </div>{" "}
+            <div className="flex flex-col text-white font-akhzid z-20 absolute bottom-4 text-sm font-normal dk:hidden tb:right-10 right-4">
+              <span>Vancouver / Canada</span>
+              <span>blmngdsgn@blooming.ca</span>
+              <span>778-222-2122</span>
+            </div>
           </div>
         </div>
       ) : null}

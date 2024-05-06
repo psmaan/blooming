@@ -104,7 +104,9 @@ const VLprojectPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <div className="tb:px-10 px-4 dk:px-20">
+        <Footer></Footer>
+      </div>
     </div>
   );
 };

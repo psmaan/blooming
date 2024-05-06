@@ -157,7 +157,9 @@ const KarenPage: React.FC = () => {
           <hr className="w-6 border border-[#b2ff02]" />
         </div>
       </div>
-      <Footer></Footer>
+      <div className="tb:px-10 px-4 dk:px-20">
+        <Footer></Footer>
+      </div>
     </div>
   );
 };

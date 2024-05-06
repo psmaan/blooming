@@ -2,7 +2,7 @@ import { images } from "../assets/Images";
 
 const Footer: React.FC = () => {
   return (
-    <div className="w-full tb:px-10 px-4 dk:px-20 font-recoleta flex flex-col text-sm">
+    <div className="w-full font-recoleta flex flex-col text-sm">
       <hr className="border-[#b2ff02] " />
       <div className=" grid grid-cols-2 tb:grid tb:grid-cols-2 gap-14  tb:gap-20 dk:flex dk:items-center dk:justify-between py-20 ">
         <div className="tb:col-span-2 col-span-2">{images.footerLogo}</div>

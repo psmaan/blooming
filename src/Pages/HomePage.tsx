@@ -12,10 +12,9 @@ const Homepage: React.FC = () => {
         <ThreeDVisual></ThreeDVisual>
         <div
           id="mainText"
-          className="absolute right-0 w-full tb:w-11/12 tbl:w-3/4   font-recoleta  perspective-style    pb-20 h-screen  font-bold tb:pr-20 pr-4 dk:pr-40 overflow-y-auto pt-80 overflow-x-hidden"
+          className="absolute right-0 w-full tb:w-11/12 tbl:w-3/4   font-recoleta  perspective-style    pb-20 h-screen  font-bold tb:pr-20 pr-4 dk:pr-40 overflow-y-auto pt-28 overflow-x-hidden"
         >
           <div className="innerPrep ">
-            {/* <div className="w-full sticky -top-20 left-0 h-[20vh] dk:h-[30vh]   gradientDiv"></div> */}
             <h1 className="text-[#B2FF02] text-3xl font-black tb:text-6xl dk:text-8xl   text-end ">
               BLOOMING DESIGN IS A BRANDING, PACKAGING AND GRAPHIC DESIGN
               STUDIO. WE MERGE TRADITION WITH INNOVATION TO PRODUCE FUNCTIONAL
@@ -30,9 +29,11 @@ const Homepage: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* <div className="w-full h-[20vh] bg-red-500 absolute perspective-style">
-        <div className="innerPrep "></div>
-      </div> */}
+      <div className="absolute left-20 bottom-8 hidden dk:flex flex-col text-white font-akhzid z-20">
+        <span>Vancouver / Canada</span>
+        <span>blmngdsgn@blooming.ca</span>
+        <span>778-222-2122</span>
+      </div>
     </div>
   );
 };

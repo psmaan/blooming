@@ -21,6 +21,9 @@ export default {
         akhzid: "Akzid",
         recoleta: "Recoleta",
       },
+      boxShadow: {
+        greenish: "0px 4px 40px 0px #B2FF0233",
+      },
     },
   },
   plugins: [
