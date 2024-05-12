@@ -1,8 +1,39 @@
+import { useRef, useEffect } from "react";
 import ThreeDVisual from "../Components/3DComponent";
 import Header from "../Components/Header";
-// Function to prevent scrolling
-// Add event listener to the window
 const Homepage: React.FC = () => {
+  const mainTextRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const mainText = mainTextRef.current;
+
+    // if (mainText) {
+    //   mainText.addEventListener("scroll", () => {
+    //     if (!mainText) return;
+    //     console.log(mainText?.scrollHeight, "scrool Height");
+    //     console.log(mainText?.scrollTop, "scroll top");
+    //     console.log(mainText?.clientHeight, " client height");
+    //     console.log(
+    //       "bottom?",
+    //       mainText?.scrollHeight - mainText?.scrollTop <=
+    //         mainText?.clientHeight * 2
+    //     );
+
+    //     // const isAtBottom =
+    //     //   mainText.scrollHeight - mainText.scrollTop === mainText.clientHeight;
+    //     // if (!isAtBottom) {
+    //     //   mainText.scrollTop = mainText.scrollHeight - mainText.clientHeight;
+    //     // }
+    //   });
+    // }
+
+    return () => {
+      if (mainText) {
+        mainText.removeEventListener("scroll", () => {});
+      }
+    };
+  }, []);
+
   return (
     <div className="max-w-screen  flex flex-col w-full overflow-hidden  bg-black h-screen  ">
       <div className="tb:px-10 px-4 dk:px-20 dk:py-4  absolute w-full">
@@ -12,7 +43,8 @@ const Homepage: React.FC = () => {
         <ThreeDVisual></ThreeDVisual>
         <div
           id="mainText"
-          className="absolute right-0 w-full tb:w-11/12 tbl:w-3/4   font-recoleta  perspective-style    pb-20 h-screen  font-bold tb:pr-20 pr-4 dk:pr-40 overflow-y-auto pt-28 overflow-x-hidden"
+          ref={mainTextRef}
+          className="absolute right-0 w-10/12 tb:w-11/12 tbl:w-3/4   font-recoleta  perspective-style    pb-20 h-screen  font-bold tb:pr-20 pr-4 dk:pr-40 overflow-y-auto pt-36 dk:pt-48 overflow-x-hidden"
         >
           <div className="innerPrep ">
             <h1 className="text-[#B2FF02] text-3xl font-black tb:text-6xl dk:text-8xl   text-end ">

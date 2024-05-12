@@ -9,6 +9,7 @@ import CoffeePage from "./Pages/CoffeePage";
 import KarenPage from "./Pages/KarenPage";
 import NFTPage from "./Pages/NFTPage";
 import HireUs from "./Pages/HireUs";
+import CulturePage from "./Pages/CulturePage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route Component={KarenPage} path="/karen"></Route>
           <Route Component={NFTPage} path="/nft"></Route>
           <Route Component={HireUs} path="/hire"></Route>
+          <Route Component={CulturePage} path="/culture"></Route>
         </Routes>
       </BrowserRouter>
     </>

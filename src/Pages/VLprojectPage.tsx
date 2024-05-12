@@ -1,5 +1,7 @@
+import AnimatedButton from "../Components/AnimatedButton";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
+import PrevButton from "../Components/PrevButton";
 import backgroundImage from "/Images&logo/VL screens 1.png";
 
 const VLprojectPage: React.FC = () => {
@@ -94,14 +96,16 @@ const VLprojectPage: React.FC = () => {
           </div>
         </div>
         <div className="flex justify-end tb:justify-between tb:px-10 px-4 dk:px-20 ">
-          <div className="tb:flex  hidden items-center gap-4">
-            <hr className="w-6 border border-[#b2ff02]" />
-            <span className="font-recoleta text-lg">Previos Project</span>
-          </div>
-          <div className="flex  items-center gap-4">
-            <span className="font-recoleta text-lg">Next Project</span>
-            <hr className="w-6 border border-[#b2ff02]" />
-          </div>
+          <PrevButton
+            innerText="Previous Project"
+            textClass="text-white font-recoleta text-xl"
+          ></PrevButton>
+
+          <AnimatedButton
+            innerText="Next Project"
+            textClass="text-white font-recoleta text-xl"
+            justifyEnd
+          ></AnimatedButton>
         </div>
       </div>
       <div className="tb:px-10 px-4 dk:px-20">

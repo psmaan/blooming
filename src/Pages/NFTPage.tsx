@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import ContactForm from "../Components/ContactForm";
 const NFTPage: React.FC = () => {
+  const screenWidth = window.screen.width;
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -31,6 +32,7 @@ const NFTPage: React.FC = () => {
   const [value, setValue] = useState(0);
   const [value2, setValue2] = useState(0);
   const [value3, setValue3] = useState(0);
+  const [hover, setHover] = useState(false);
   const maxValue = 190000; // Set the maximum value
   const maxValue2 = 20; // Set the maximum value
   const maxValue3 = 250; // Set the maximum value
@@ -289,7 +291,7 @@ const NFTPage: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* Remainging TB*/}
+
         <div className="flex flex-col w-full items-center gap-8">
           <h1 className="text-3xl dk:text-5xl font-medium text-[#B2FF02]">
             Choose your Plan
@@ -300,8 +302,7 @@ const NFTPage: React.FC = () => {
               // autoPlay
               // infinite
               arrows={false}
-              showDots={true}
-              // customDot={<CustomDot></CustomDot>}
+              showDots={screenWidth > 1024 ? false : true}
               itemClass="flex items-center justify-center"
               containerClass=" pt-10 pb-10"
             >
@@ -492,7 +493,7 @@ const NFTPage: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* Reamainging TB*/}
+
         <div className="flex flex-col gap-16">
           <div className="gap-4 flex flex-col">
             <h2 className="text-[#B2FF02] text-3xl dk:text-5xl font-medium ">
@@ -728,11 +729,20 @@ const NFTPage: React.FC = () => {
           <h3 className="text-4xl text-center dk:text-5xl text-[#7A7A7A]">
             Launch your NFT Project
           </h3>
-          <div className="flex items-center justify-center gap-2">
-            <h3 className="text-4xl">Hire us</h3>
-            <i>{images.headUp}</i>
+          <div className="flex items-center justify-center">
+            <button
+              className="flex items-center justify-center gap-2 "
+              onMouseLeave={() => setHover(false)}
+              onMouseEnter={() => setHover(true)}
+            >
+              <h3 className="text-4xl ">Hire us</h3>
+              <i className={hover ? "rotate-90 transition-all" : ""}>
+                {images.headUp}
+              </i>
+            </button>
           </div>
         </div>
+
         <div className="flex mt-20 flex-col  items-center justify-center w-full gap-10">
           <h3 className="text-4xl text-center dk:text-5xl text-[#B2FF02]">
             Latest projects

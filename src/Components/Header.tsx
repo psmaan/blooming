@@ -111,63 +111,66 @@ const Header: React.FC = () => {
           <div ref={animRef} className=" ">
             <ThreeDVisual></ThreeDVisual>
           </div>
-          <div className="absolute right-0 w-full tb:w-5/6 tbl:w-4/6 rotate font-recoleta pt-52   font-bold tb:pr-10 pr-4 dk:pr-20 h-screen overflow-y-auto overflow-x-hidden">
-            <div
-              className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
-              ref={ourWorkRef}
-            >
-              <label htmlFor="" className="pt-3">
-                01.
-              </label>
-              <Link
-                to={"/portfolio"}
-                className=" text-4xl tb:text-6xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+          <div className="absolute right-0 w-full tb:w-5/6 tbl:w-4/6 rotate font-recoleta pt-52  font-bold tb:pr-10 pr-4 dk:pr-20 h-screen overflow- overflow-hidden perspective-style  ">
+            <div className=" w-full font-recoleta   font-bold h-screen  overflow-hidden innerPrep">
+              <div
+                className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
+                ref={ourWorkRef}
               >
-                OUR WORK
-              </Link>
-            </div>{" "}
-            <div
-              ref={nftRef}
-              className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
-            >
-              <label htmlFor="" className=" pt-3">
-                02.
-              </label>
-              <Link
-                to={"/vlproject"}
-                className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap  font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                <label htmlFor="" className="pt-3">
+                  01.
+                </label>
+                <Link
+                  to={"/portfolio"}
+                  className=" text-4xl tb:text-6xl dk:text-8xl whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                >
+                  OUR WORK
+                </Link>
+              </div>{" "}
+              <div
+                ref={nftRef}
+                className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
               >
-                NFT SERVICE
-              </Link>
-            </div>{" "}
-            <div
-              ref={cultureRef}
-              className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
-            >
-              <label htmlFor="" className=" pt-3">
-                03.
-              </label>
-              <Link
-                to={"/unibrain"}
-                className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                <label htmlFor="" className=" pt-3">
+                  02.
+                </label>
+                <Link
+                  to={"/vlproject"}
+                  className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap  font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                >
+                  NFT SERVICE
+                </Link>
+              </div>{" "}
+              <div
+                ref={cultureRef}
+                className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
               >
-                CULTURE
-              </Link>
+                <label htmlFor="" className=" pt-3">
+                  03.
+                </label>
+                <Link
+                  to={"/unibrain"}
+                  className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                >
+                  CULTURE
+                </Link>
+              </div>
+              <div
+                ref={hireRef}
+                className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
+              >
+                <label htmlFor="" className=" pt-3">
+                  04.
+                </label>
+                <Link
+                  to={"/coffee"}
+                  className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
+                >
+                  HIRE US
+                </Link>
+              </div>{" "}
             </div>
-            <div
-              ref={hireRef}
-              className="flex justify-end gap-8  text-[#B2FF02] cursor-pointer"
-            >
-              <label htmlFor="" className=" pt-3">
-                04.
-              </label>
-              <Link
-                to={"/coffee"}
-                className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
-              >
-                HIRE US
-              </Link>
-            </div>{" "}
+
             <div className="flex flex-col text-white font-akhzid z-20 absolute bottom-4 text-sm font-normal dk:hidden tb:right-10 right-4">
               <span>Vancouver / Canada</span>
               <span>blmngdsgn@blooming.ca</span>

@@ -1,5 +1,7 @@
+import AnimatedButton from "../Components/AnimatedButton";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
+import PrevButton from "../Components/PrevButton";
 import backgroundImage from "/Images&logo/adorable1.png";
 const AdorablePage: React.FC = () => {
   return (
@@ -39,71 +41,100 @@ const AdorablePage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="tb:px-10 px-4 dk:px-20 ">
+      <div className="tb:px-10 px-4 dk:px-20 flex flex-col gap-10  ">
         <img src="/Images&logo/adorable2.png" alt="" />
+        <hr className="border-[#b2ff02] w-3/4 block tb:hidden dk:block dk:w-1/6" />
+        <p className="font-akhzid max-w-[600px]">
+          Each production is fragmented into a series of videos and images to
+          capture the broader story of Laptops process and expertise.
+        </p>
       </div>
-      <div className="tb:px-10 px-4 dk:px-20 ">
-        <div className="grid  grid-cols-1 gap-10 dk:gap-0  dk:grid-cols-3">
-          <div className="col-span-2 flex order-1 dk:-order-10 flex-col gap-20">
-            <div>
-              <img src="/Images&logo/VL screens 3.png" alt="" />
-            </div>
-            <div className="flex flex-col gap-10">
-              <hr className="w-64 border-[#b2ff02]" />
-              <span className="font-akhzid text-lg">
-                The website was carefully adapted for mobile platforms, with
-                optimised functionality and video integration.
-              </span>
-            </div>
+      <div className="flex flex-col gap-10 tb:px-10 px-4 dk:px-20 w-full">
+        <div className="flex flex-col gap-4 w-full tb:grid tb:grid-cols-2 dk:grid-cols-3 ">
+          <div className="w-full">
+            <img src="/Images&logo/adorable3.png" className="w-full" alt="" />
           </div>
-          <div className="font-akhzid flex  flex-col gap-2 mt-4">
-            <p>
-              Each production is fragmented into a series of videos and images
-              to capture the broader story of Laptops process and expertise.
-            </p>
-            <p>
-              Echoing SIRAP’s unique approach to creating moving image, each
-              production is presented as an immersive story-telling experience.
-            </p>
+          <div>
+            <img src="/Images&logo/adorable4.png" className="w-full" alt="" />
+          </div>
+          <div>
+            <img src="/Images&logo/adorable5.png" className="w-full" alt="" />
           </div>
         </div>
+        {/* Reamiaing */}
+        <div className="gap-4 flex flex-col w-full dk:items-end ">
+          <hr className="border-[#b2ff02] w-3/4 block tb:hidden dk:block dk:w-1/6" />
+          <p className="font-akhzid">
+            Each production is fragmented into a series of videos and images to
+            capture the broader story of Laptops process and expertise.
+          </p>
+        </div>
       </div>
-      <div className="flex flex-col gap-10">
-        <div className="tb:px-10 px-4 dk:px-20 gap-10 grid dk:grid-cols-3 tb:grid-cols-2 grid-cols-1  ">
-          <div className=" flex items-center justify-center">
+
+      <div className="flex flex-col gap-10 tb:px-10 px-4 dk:px-20 w-full">
+        <div className="flex flex-col gap-4 w-full">
+          <div className="w-full">
             <img
-              src="/Images&logo/VL screens 4.png"
+              src="/Images&logo/adorable6.png"
+              className="w-full dk:w-[1000px]"
               alt=""
-              className=" w-[50%] tb:w-[80%]"
             />
           </div>
-          <div className=" flex items-center justify-center">
+          <div className="w-full dk:flex dk:items-center dk:justify-center dk:-mt-20">
             <img
-              src="/Images&logo/VL screens 5.png"
+              src="/Images&logo/adorable7.png"
+              className="w-full  dk:w-[1000px]"
               alt=""
-              className=" w-[50%] tb:w-[80%]"
             />
           </div>
-          <div className=" flex items-center justify-center">
+          <div className="w-full dk:flex dk:items-center dk:justify-end dk:-mt-20">
             <img
-              src="/Images&logo/VL screens 6.png"
+              src="/Images&logo/adorable8.png"
+              className="w-full  dk:w-[1000px]"
               alt=""
-              className=" w-[50%] tb:w-[80%]"
             />
           </div>
         </div>
-        <div className="flex justify-end tb:justify-between tb:px-10 px-4 dk:px-20 ">
-          <div className="tb:flex  hidden items-center gap-4">
-            <hr className="w-6 border border-[#b2ff02]" />
-            <span className="font-recoleta text-lg">Previos Project</span>
-          </div>
-          <div className="flex  items-center gap-4">
-            <span className="font-recoleta text-lg">Next Project</span>
-            <hr className="w-6 border border-[#b2ff02]" />
-          </div>
+        <div className="gap-4 flex flex-col dk:max-w-[600px]">
+          <hr className="border-[#b2ff02] w-3/4 block tb:hidden dk:w-1/6 dk:block " />
+          <p className="font-akhzid">
+            Each production is fragmented into a series of videos and images to
+            capture the broader story of Laptops process and expertise.
+          </p>
+          <p className="font-akhzid">
+            Echoing SIRAP’s unique approach to creating moving image, each
+            production is presented as an immersive story-telling experience.
+          </p>
         </div>
       </div>
-      <Footer></Footer>
+      <div className="tb:px-10 px-4 dk:px-20 w-full dk:flex dk:items-center dk:flex-col">
+        <img
+          src="/Images&logo/adorable9.png"
+          alt=""
+          className="w-full dk:max-w-[1300px]"
+        />
+        <div className="gap-4 flex flex-col dk:max-w-[600px] dk:block hidden">
+          <hr className="border-[#b2ff02] w-3/4 block tb:hidden dk:w-1/6 dk:block dk:-mt-60 " />
+          <p className="font-akhzid">
+            Each production is fragmented into a series of videos and images.
+          </p>
+        </div>
+      </div>
+      <div className="flex justify-end tb:justify-between tb:px-10 px-4 dk:px-20 ">
+        <PrevButton
+          innerText="Previous Project"
+          textClass="text-white font-recoleta text-xl"
+        ></PrevButton>
+
+        <AnimatedButton
+          innerText="Next Project"
+          textClass="text-white font-recoleta text-xl"
+          justifyEnd
+        ></AnimatedButton>
+      </div>
+      <div className="tb:px-10 px-4 dk:px-20">
+        <Footer></Footer>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import Header from "../Components/Header";
 import EyeBallButton from "../Components/EyeBallButton";
 import Footer from "../Components/Footer";
+import AnimatedButton from "../Components/AnimatedButton";
 const PortfolioPage: React.FC = () => {
   return (
     <div className="w-full tb:px-10 px-4 dk:px-20  dk:py-4 flex flex-col text-white  min-h-screen bg-black">
@@ -36,7 +37,7 @@ const PortfolioPage: React.FC = () => {
                 Branding, Packaging, UI/UX
               </span>
             </div>
-          </div>{" "}
+          </div>
           <div className="flex flex-col items-center justify-center gap-10">
             <img
               src="/Images&logo/Portfolio3.png"
@@ -49,7 +50,7 @@ const PortfolioPage: React.FC = () => {
                 UI/UX Design, Branding
               </span>
             </div>
-          </div>{" "}
+          </div>
           <div className="flex flex-col items-center justify-center gap-10">
             <img
               src="/Images&logo/Portfolio4.png"
@@ -99,10 +100,12 @@ const PortfolioPage: React.FC = () => {
                 <span className="text-[#b2ff02] text-xs">From: </span>
                 <span>1000$</span>
               </div>
-              <div className="font-recoleta flex flex-row items-center gap-2">
-                <span className="">Learn more</span>
-                <hr className="w-8 border-[#b2ff02]" />
-              </div>
+
+              <AnimatedButton
+                innerText="Learn more"
+                textClass="text-white font-recoleta text-sm"
+                justifyEnd
+              ></AnimatedButton>
             </div>
           </div>
           <div className="dk:max-w-80 tb:w-full  flex flex-col gap-2">
@@ -117,10 +120,11 @@ const PortfolioPage: React.FC = () => {
                 <span className="text-[#b2ff02] text-xs">From: </span>
                 <span>350$</span>
               </div>
-              <div className="font-recoleta flex flex-row items-center gap-2">
-                <span className="">Learn more</span>
-                <hr className="w-8 border-[#b2ff02]" />
-              </div>
+              <AnimatedButton
+                innerText="Learn more"
+                textClass="text-white font-recoleta text-sm"
+                justifyEnd
+              ></AnimatedButton>
             </div>
           </div>
           <div className="dk:max-w-80 tb:w-full flex flex-col gap-2">
@@ -135,10 +139,11 @@ const PortfolioPage: React.FC = () => {
                 <span className="text-[#b2ff02] text-xs">From: </span>
                 <span>1200$</span>
               </div>
-              <div className="font-recoleta flex flex-row items-center gap-2">
-                <span className="">Learn more</span>
-                <hr className="w-8 border-[#b2ff02]" />
-              </div>
+              <AnimatedButton
+                innerText="Learn more"
+                textClass="text-white font-recoleta text-sm"
+                justifyEnd
+              ></AnimatedButton>
             </div>
           </div>
         </div>
