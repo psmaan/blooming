@@ -44,9 +44,9 @@ const Homepage: React.FC = () => {
         <div
           id="mainText"
           ref={mainTextRef}
-          className="absolute right-0 w-10/12 tb:w-11/12 tbl:w-3/4   font-recoleta  perspective-style    pb-20 h-screen  font-bold tb:pr-20 pr-4 dk:pr-40 overflow-y-auto pt-36 dk:pt-48 overflow-x-hidden"
+          className="fixed right-0 w-10/12 tb:w-11/12 tbl:w-3/4 overflow-y-auto  font-recoleta  perspective-style    pb-20 h-screen tb:h-[120vh] dk:h-[150vh] font-bold tb:pr-20 pr-4 dk:pr-40  pt-36 dk:pt-48 overflow-x-hidden"
         >
-          <div className="innerPrep ">
+          <div className="innerPrep  h-screen ">
             <h1 className="text-[#B2FF02] text-3xl font-black tb:text-6xl dk:text-8xl   text-end ">
               BLOOMING DESIGN IS A BRANDING, PACKAGING AND GRAPHIC DESIGN
               STUDIO. WE MERGE TRADITION WITH INNOVATION TO PRODUCE FUNCTIONAL
