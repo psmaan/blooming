@@ -138,27 +138,27 @@ const ThreeDVisual: React.FC = () => {
   // }, []);
   useEffect(() => {
     // if(document.querySelector(".canvas")){
-    const script = document.createElement("script");
-    const script2 = document.createElement("script");
+    // const script = document.createElement("script");
+    // const script2 = document.createElement("script");
     const script3 = document.createElement("script");
 
-    script.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js";
-    script.defer = true;
-    script.integrity =
-      "sha512-B8ruywf8mKA4fm0K8SrrNhO5DTokuipFEo7rEnI0RVTt9p29MJKfg8TfOVwMAFZxgI+zOF4iwOA/ByvyJ/sslw==";
-    script.crossOrigin = "anonymous";
+    // script.src =
+    //   "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js";
+    // script.defer = true;
+    // script.integrity =
+    //   "sha512-B8ruywf8mKA4fm0K8SrrNhO5DTokuipFEo7rEnI0RVTt9p29MJKfg8TfOVwMAFZxgI+zOF4iwOA/ByvyJ/sslw==";
+    // script.crossOrigin = "anonymous";
 
-    document.body.appendChild(script);
+    // document.body.appendChild(script);
 
-    script2.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js";
-    script2.defer = true;
-    script2.integrity =
-      "sha512-9nYs8QvHOk+iXmZ/TT+PIfk/gFij+OkLqPF48RnRCW2mASmpIj95zM+WbsUKOD46Fr6ay2gMHf/I1MI09p5wdA==";
-    script2.crossOrigin = "anonymous";
+    // script2.src =
+    //   "https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js";
+    // script2.defer = true;
+    // script2.integrity =
+    //   "sha512-9nYs8QvHOk+iXmZ/TT+PIfk/gFij+OkLqPF48RnRCW2mASmpIj95zM+WbsUKOD46Fr6ay2gMHf/I1MI09p5wdA==";
+    // script2.crossOrigin = "anonymous";
 
-    document.body.appendChild(script2);
+    // document.body.appendChild(script2);
 
     script3.src = "/main.min.js";
 
@@ -166,8 +166,8 @@ const ThreeDVisual: React.FC = () => {
 
     return () => {
       // Remove the script on component unmount
-      document.body.removeChild(script);
-      document.body.removeChild(script2);
+      // document.body.removeChild(script);
+      // document.body.removeChild(script2);
       document.body.removeChild(script3);
     };
   }, []);
