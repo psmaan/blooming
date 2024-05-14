@@ -75,7 +75,7 @@ const Header: React.FC = () => {
       <div className="flex z-20 w-full">
         {menu ? (
           <button
-            className="flex flex-row flex-1 gap-2 items-center"
+            className="flex flex-row  flex-1 gap-2 items-center"
             onClick={() => {
               setClose(true);
             }}
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
           </button>
         ) : (
           <button
-            className="flex flex-row flex-1 gap-2 items-center"
+            className="flex flex-row  flex-1 gap-2 items-center"
             onClick={() => setMenu(true)}
           >
             <i>{images.menu}</i>
