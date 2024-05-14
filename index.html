@@ -27,7 +27,36 @@
     <script id="fragmentShader" type="x-shader/x-vertex" defer>
       varying float qnoise;uniform float time;uniform bool redhell;uniform float r_color;uniform float g_color;uniform float b_color;void main() {float r, g, b;r = cos(qnoise + (r_color));g = cos(qnoise + g_color);b = cos(qnoise + (b_color));gl_FragColor = vec4(r, g, b, 1.0);}
     </script>
-    <!-- <link rel="stylesheet" href="/mui.css" /> -->
+    <style>
+      .perspective-style {
+        perspective: 1000px;
+      }
+      .innerPrep {
+        transition: 0.3s;
+        transform: rotateY(-18deg);
+      }
+      #mainText::-webkit-scrollbar {
+        display: none;
+      }
+      #mainText {
+        mask-image: linear-gradient(
+          180deg,
+          transparent,
+          rgba(0, 0, 0, 0.1),
+          #000,
+          #000,
+          #000,
+          #000,
+          #000
+        );
+      }
+      .portfolioImg:hover {
+        clip-path: polygon(0 9%, 100% 0%, 100% 90%, 0 100%);
+      }
+      .gradientDiv {
+        background: linear-gradient(to bottom, #00000000, #383838);
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
