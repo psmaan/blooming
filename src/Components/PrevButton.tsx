@@ -28,8 +28,8 @@ const PrevButton: React.FC<AnimatedButtonI> = (props) => {
     <div
       className={
         props.justifyEnd
-          ? "w-full items-center flex  justify-end "
-          : "w-full items-center flex"
+          ? "w-full items-center hidden tb:flex  justify-end  "
+          : "w-full items-center hidden tb:flex "
       }
     >
       <motion.div

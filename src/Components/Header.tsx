@@ -72,7 +72,7 @@ const Header: React.FC = () => {
     <div
       className={"text-white flex  flex-col w-full z-50  py-4 max-h-screen "}
     >
-      <div className="flex z-20 w-full">
+      <div className="flex z-50 w-full">
         {menu ? (
           <button
             className="flex flex-row  flex-1 gap-2 items-center"
@@ -106,7 +106,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       {menu ? (
-        <div className="flex absolute top-0 left-0 w-full h-full  z-10">
+        <div className="flex absolute top-0 left-0 w-full h-full  z-40">
           <div className="absolute w-full h-screen top-0 left-0 bg-black"></div>
           <div ref={animRef} className=" ">
             <ThreeDVisual></ThreeDVisual>
