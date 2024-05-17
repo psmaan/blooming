@@ -21,8 +21,6 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
-    "react-glitch-animation": "^1.0.0",
-    "react-glitch-effect": "^3.1.0",
     "react-multi-carousel": "^2.8.5",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.22.3",
