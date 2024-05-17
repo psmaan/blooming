@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { images } from "../assets/Images";
+import SocialButton from "./SocialButton";
 
 const Footer: React.FC = () => {
+  const [hover, setHover] = useState(false);
+
   return (
     <div className="w-full font-recoleta flex flex-col text-sm">
       <hr className="border-[#b2ff02] " />
@@ -27,19 +31,25 @@ const Footer: React.FC = () => {
         <div className="flex flex-col gap-2  row-start-2 items-center tb:items-stretch row-span-2 col-start-2 tb:row-auto tb:row-start-auto tb:col-start-auto">
           <h2>Let’s be Friends</h2>
           <div className="flex gap-2 tb:flex-row flex-col ">
-            <i>{images.dribble}</i>
-            <i>{images.behance}</i>
-            <i>{images.instagram}</i>
+            <SocialButton image="/Images&logo/Dribblle.png"></SocialButton>
+            <SocialButton image="/Images&logo/Behance.png"></SocialButton>
+            <SocialButton image="/Images&logo/insta.png"></SocialButton>
           </div>
         </div>
         <hr className="border-[#b2ff02] col-span-2 dk:hidden tb:hidden " />
 
         <div className="flex flex-col gap-2">
           <h2>Tell us your needs</h2>
-          <div className="flex gap-2 items-center">
+          <button
+            className="flex gap-2 items-center"
+            onMouseLeave={() => setHover(false)}
+            onMouseEnter={() => setHover(true)}
+          >
             <h2 className="text-[#b2ff02] text-4xl ">Contact </h2>
-            <i>{images.headUp}</i>
-          </div>
+            <i className={hover ? "rotate-90 transition-all" : ""}>
+              {images.headUp}
+            </i>
+          </button>
         </div>
       </div>
     </div>

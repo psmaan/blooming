@@ -36,7 +36,36 @@ const NFTPage: React.FC = () => {
   const maxValue = 190000; // Set the maximum value
   const maxValue2 = 20; // Set the maximum value
   const maxValue3 = 250; // Set the maximum value
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState("");
+  const [lastScrollY, setLastScrollY] = useState(window.scrollY);
 
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+      setScrollDirection("down");
+    } else if (currentScrollY < lastScrollY) {
+      setScrollDirection("up");
+    }
+
+    setLastScrollY(currentScrollY);
+
+    setIsScrolling(true);
+    //@ts-ignore
+    clearTimeout(window.scrollTimeout);
+    //@ts-ignore
+    window.scrollTimeout = setTimeout(() => {
+      setIsScrolling(false);
+    }, 100); // Adjust the timeout as needed
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
   useEffect(() => {
     const tl = gsap.timeline({ repeat: -1, yoyo: true });
 
@@ -98,9 +127,19 @@ const NFTPage: React.FC = () => {
     };
   }, []);
   return (
-    <div className="w-full tb:px-10 px-4 dk:px-20  font-recoleta  dk:py-4 flex flex-col text-white  min-h-screen bg-black ">
-      <Header></Header>
-      <div className="pt-4 flex flex-col gap-40 w-full">
+    <div className="w-full font-recoleta  dk:py-4 flex flex-col text-white  min-h-screen bg-black ">
+      <div className=" tb:px-10 px-4 dk:px-20 ">
+        <Header></Header>
+      </div>
+      <div
+        className={`inertia-container  tb:px-10 px-4 dk:px-20  pt-4 flex flex-col gap-40 w-full ${
+          isScrolling
+            ? scrollDirection === "down"
+              ? "inertia-containerscrollingDown"
+              : "inertia-containerscrollingUp"
+            : ""
+        }`}
+      >
         <div className="flex flex-col dk:flex-row gap-2 w-full">
           <div className="dk:flex dk:flex-col gap-2">
             <h1 className="text-5xl tb:text-8xl  font-bold">
@@ -861,7 +900,9 @@ const NFTPage: React.FC = () => {
         </div>
         <ContactForm></ContactForm>
       </div>
-      <Footer></Footer>
+      <div className=" tb:px-10 px-4 dk:px-20 ">
+        <Footer></Footer>
+      </div>
     </div>
   );
 };

@@ -31,12 +31,13 @@ const ContactForm: React.FC = () => {
 
               "& .MuiInputBase-root::after": {
                 borderBottom: "none",
-                transition: "all",
+                transition: "all 0.3s ease",
+
                 position: "absolute",
-                bottom: 0,
+                bottom: -1,
                 left: 0,
                 width: "25%",
-                height: "2px",
+                height: "1px",
                 backgroundColor: "#B2FF02",
                 color: "#B2FF02",
               },
@@ -44,7 +45,7 @@ const ContactForm: React.FC = () => {
               "& .MuiInputBase-formControl": {
                 position: "relative",
                 marginTop: "40px",
-                borderBottom: "1px solid #B2FF02",
+                borderBottom: "1px solid rgba(178, 255, 2, 0.5)",
               },
 
               "& .MuiFormLabel-root.Mui-focused": {
@@ -73,12 +74,13 @@ const ContactForm: React.FC = () => {
 
               "& .MuiInputBase-root::after": {
                 borderBottom: "none",
-                transition: "all",
+                transition: "all 0.3s ease",
+
                 position: "absolute",
-                bottom: 0,
+                bottom: -1,
                 left: 0,
                 width: "25%",
-                height: "2px",
+                height: "1px",
                 backgroundColor: "#B2FF02",
                 color: "#B2FF02",
               },
@@ -86,7 +88,7 @@ const ContactForm: React.FC = () => {
               "& .MuiInputBase-formControl": {
                 position: "relative",
                 marginTop: "40px",
-                borderBottom: "1px solid #B2FF02",
+                borderBottom: "1px solid rgba(178, 255, 2, 0.5)",
               },
 
               "& .MuiFormLabel-root.Mui-focused": {
@@ -118,12 +120,12 @@ const ContactForm: React.FC = () => {
 
               "& .MuiInputBase-root::after": {
                 borderBottom: "none",
-                transition: "all",
+                transition: "all 0.3s ease",
                 position: "absolute",
-                bottom: 0,
+                bottom: -1,
                 left: 0,
                 width: "25%",
-                height: "2px",
+                height: "1px",
                 backgroundColor: "#B2FF02",
                 color: "#B2FF02",
               },
@@ -131,7 +133,7 @@ const ContactForm: React.FC = () => {
               "& .MuiInputBase-formControl": {
                 position: "relative",
                 marginTop: "40px",
-                borderBottom: "1px solid #B2FF02",
+                borderBottom: "1px solid rgba(178, 255, 2, 0.5)",
               },
 
               "& .MuiFormLabel-root.Mui-focused": {

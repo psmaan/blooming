@@ -31,6 +31,17 @@
       .perspective-style {
         perspective: 1000px;
       }
+      .inertia-container {
+        transition: transform 0.5s ease-in;
+        will-change: transform;
+      }
+      .inertia-containerscrollingDown {
+        transform: skewY(-1deg); /* Adjust the angle as needed */
+      }
+
+      .inertia-containerscrollingUp {
+        transform: skewY(1deg); /* Adjust the angle as needed */
+      }
       .innerPrep {
         transition: 0.3s;
         transform: rotateY(-18deg);
@@ -53,8 +64,89 @@
       .portfolioImg:hover {
         clip-path: polygon(0 9%, 100% 0%, 100% 90%, 0 100%);
       }
+      body {
+        transition: transform 0.3s ease;
+      }
+
+      .portfolioImg {
+        transition: clip-path 0.3s ease-in-out; /* Smooth transition with delay */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Initial shape */
+      }
       .gradientDiv {
         background: linear-gradient(to bottom, #00000000, #383838);
+      }
+      .social-icon-wrapper {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.1s ease;
+      }
+
+      .social-icon-wrapper.glitching .social-icon {
+        animation: glitch 0.1s infinite; /* High-speed animation */
+      }
+
+      @keyframes glitch {
+        0% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(-2px, 2px);
+        }
+        40% {
+          transform: translate(2px, -2px);
+        }
+        60% {
+          transform: translate(-2px, -2px);
+        }
+        80% {
+          transform: translate(2px, 2px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+
+      /* Additional glitch layers with color distortion */
+      .social-icon-wrapper.glitching::before,
+      .social-icon-wrapper.glitching::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit; /* Inherit background from parent */
+        opacity: 0.7;
+        animation: glitch 0.1s infinite; /* High-speed animation */
+      }
+
+      .social-icon-wrapper.glitching::before {
+        mix-blend-mode: screen;
+        background: inherit;
+        transform: translate(-2px, -2px);
+        clip: rect(20px, 120px, 60px, 0);
+        filter: hue-rotate(90deg); /* Color distortion effect */
+      }
+
+      .social-icon-wrapper.glitching::after {
+        mix-blend-mode: screen;
+        background: inherit;
+        transform: translate(2px, 2px);
+        clip: rect(80px, 220px, 20px, 0);
+        filter: hue-rotate(270deg); /* Color distortion effect */
+      }
+      .portStyle {
+        translate: none;
+        rotate: none;
+        scale: none;
+        transform-origin: 100% 50%;
+        transform: translate3d(0px, 0px, 0px);
       }
     </style>
   </head>

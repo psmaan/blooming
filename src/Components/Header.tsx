@@ -92,13 +92,17 @@ const Header: React.FC = () => {
             <span className="font-recoleta ">Menu</span>
           </button>
         )}
-        <div className="flex-1  flex items-center dk:justify-center justify-end">
+
+        <a
+          href="/"
+          className="flex-1  flex items-center dk:justify-center justify-end"
+        >
           <img
             src="/Images&logo/bloomingLogo.png"
             alt=""
             className="w-3/4 max-w-40"
           />
-        </div>
+        </a>
         <div className="flex-1 hidden dk:flex justify-end font-akhzid  items-center">
           <span className="mr-4 ">Our work:</span>
           <span className="mr-3">[PRINTT DESIGN]</span>
