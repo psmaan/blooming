@@ -31,15 +31,17 @@ const ContactForm: React.FC = () => {
 
               "& .MuiInputBase-root::after": {
                 borderBottom: "none",
-                transition: "all 0.3s ease",
-
+                transition: "width 0.3s ease-in",
                 position: "absolute",
                 bottom: -1,
                 left: 0,
-                width: "25%",
+                width: "0%",
                 height: "1px",
                 backgroundColor: "#B2FF02",
                 color: "#B2FF02",
+              },
+              "& .MuiInputBase-root.Mui-focused::after": {
+                width: "25%", // Expand to full width when focused
               },
 
               "& .MuiInputBase-formControl": {
@@ -74,17 +76,18 @@ const ContactForm: React.FC = () => {
 
               "& .MuiInputBase-root::after": {
                 borderBottom: "none",
-                transition: "all 0.3s ease",
-
+                transition: "width 0.3s ease-in",
                 position: "absolute",
                 bottom: -1,
                 left: 0,
-                width: "25%",
+                width: "0%",
                 height: "1px",
                 backgroundColor: "#B2FF02",
                 color: "#B2FF02",
               },
-
+              "& .MuiInputBase-root.Mui-focused::after": {
+                width: "25%", // Expand to full width when focused
+              },
               "& .MuiInputBase-formControl": {
                 position: "relative",
                 marginTop: "40px",
@@ -120,14 +123,17 @@ const ContactForm: React.FC = () => {
 
               "& .MuiInputBase-root::after": {
                 borderBottom: "none",
-                transition: "all 0.3s ease",
+                transition: "width 0.3s ease-in",
                 position: "absolute",
                 bottom: -1,
                 left: 0,
-                width: "25%",
+                width: "0%",
                 height: "1px",
                 backgroundColor: "#B2FF02",
                 color: "#B2FF02",
+              },
+              "& .MuiInputBase-root.Mui-focused::after": {
+                width: "25%", // Expand to full width when focused
               },
 
               "& .MuiInputBase-formControl": {
