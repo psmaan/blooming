@@ -75,7 +75,7 @@ const Header: React.FC = () => {
       <div className="flex z-50 w-full">
         {menu ? (
           <button
-            className="flex flex-row  flex-1 gap-2 items-center"
+            className="flex flex-row ml-12  flex-1 gap-2 items-center"
             onClick={() => {
               setClose(true);
             }}
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
           </button>
         ) : (
           <button
-            className="flex flex-row  flex-1 gap-2 items-center"
+            className="flex flex-row ml-12  flex-1 gap-2 items-center"
             onClick={() => setMenu(true)}
           >
             <i>{images.menu}</i>
@@ -104,9 +104,7 @@ const Header: React.FC = () => {
           />
         </a>
         <div className="flex-1 hidden dk:flex justify-end font-akhzid  items-center">
-          <span className="mr-4 ">Our work:</span>
-          <span className="mr-3">[PRINTT DESIGN]</span>
-          <span>[UX/UI]</span>
+          <span className="mr-12">Our work</span>
         </div>
       </div>
       {menu ? (
@@ -139,10 +137,10 @@ const Header: React.FC = () => {
                   02.
                 </label>
                 <Link
-                  to={"/vlproject"}
+                  to={"/servicesPage"}
                   className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap  font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
                 >
-                  NFT SERVICE
+                  SERVICES
                 </Link>
               </div>{" "}
               <div
