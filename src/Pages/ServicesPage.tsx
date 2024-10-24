@@ -62,11 +62,11 @@ const ServicesPage = () => {
             <div className='w-full absolute flex justify-center -top-[340px]'>
                 <ThreeDVisual />
             </div>
-            <h1 className='text-[200px] text-[#B2FF02] mt-[180px] z-50 font-[recoleta] text-center w-full'>Services.</h1>
+            <h1 className='text-[220px] text-[#B2FF02] mt-[180px] z-50 font-[recoleta] text-center w-full'>Services.</h1>
 
             {/* Branding Accordion Header */}
             <div className='w-full px-[120px] flex justify-between items-start mt-20 py-12'>
-                <h1 className='text-6xl text-[#B2FF02] z-50 font-[recoleta]'>Branding.</h1>
+                <h1 className='w-[400px] text-6xl text-[#B2FF02] z-50 font-[recoleta]'>Branding.</h1>
                 <div className='w-[550px]'>
                     <h1 className='text-[#7a7a7a]'>Our Branding services define and develop a unique identity for your business, ensuring it stands out and resonates with your audience. Let us help you create a lasting impression.</h1>
                     <h1 className='text-4xl font-[recoleta] mt-12 text-white'>Learn More</h1>
@@ -81,7 +81,7 @@ const ServicesPage = () => {
             </div>
 
             {/* Branding Accordion Content - Hidden until isBrandingOpen is true */}
-            <div className={`w-full px-[120px] flex justify-between items-start py-8 accordion-content ${isBrandingOpen ? 'accordion-content-open' : ''}`}>
+            <div className={`w-full px-[120px] flex justify-between items-start py-8 mb-12 accordion-content ${isBrandingOpen ? 'accordion-content-open' : ''}`}>
                 <div>
                     <h1 className='text-4xl text-white z-50 font-[recoleta]  '>Strategy</h1>
                     <ul className='list-outside list-disc  ml-2 mt-8 text-white'>
@@ -134,7 +134,7 @@ const ServicesPage = () => {
 
             {/* SEO Accordion Header */}
             <div className='w-full px-[120px] flex justify-between items-start mt-20 py-12'>
-                <h1 className='text-6xl text-[#B2FF02] z-50 font-[recoleta]'>SEO.</h1>
+                <h1 className='w-[400px] text-6xl text-[#B2FF02] z-50 font-[recoleta]'>SEO.</h1>
                 <div className='w-[550px]'>
                     <h1 className='text-[#7a7a7a]'>Boost your online visibility through content optimization, high-quality backlinks, and technical improvements, driving targeted traffic and higher search rankings.</h1>
                     <h1 className='text-4xl font-[recoleta] mt-12 text-white'>Learn More</h1>
@@ -152,7 +152,7 @@ const ServicesPage = () => {
 
 
             {/* SEO Accordion Content - Hidden until isSeoOpen is true */}
-            <div className={`w-full px-[120px] flex justify-between items-start py-8 accordion-content ${isSeoOpen ? 'accordion-content-open' : ''}`}>
+            <div className={`w-full px-[120px] flex justify-between items-start mb-12 py-8 accordion-content ${isSeoOpen ? 'accordion-content-open' : ''}`}>
                 <div>
                     <h1 className='text-4xl text-white z-50 font-[recoleta]  '>Content</h1>
                     <ul className='list-outside list-disc  ml-2 mt-8 text-white'>
@@ -206,7 +206,7 @@ const ServicesPage = () => {
             </div>
             {/* UIUX Accordion Header */}
             <div className='w-full px-[120px] flex justify-between items-start mt-20 py-12'>
-                <h1 className='text-6xl text-[#B2FF02] z-50 font-[recoleta]'>UX/UI.</h1>
+                <h1 className='w-[400px] text-6xl text-[#B2FF02] z-50 font-[recoleta]'>UX/UI.</h1>
                 <div className='w-[550px]'>
                     <h1 className='text-[#7a7a7a]'>Focuses on creating intuitive, visually appealing interfaces with seamless user experiences, ensuring responsive design and fast, efficient performance across all devices.</h1>
                     <h1 className='text-4xl font-[recoleta] mt-12 text-white'>Learn More</h1>
@@ -274,7 +274,7 @@ const ServicesPage = () => {
             </div>
             {/* DevOps Accordion Header */}
             <div className='w-full px-[120px] flex justify-between items-start mt-20 py-12'>
-                <h1 className='text-6xl text-[#B2FF02] z-50 font-[recoleta]'>DevOps.</h1>
+                <h1 className='w-[400px] text-6xl text-[#B2FF02] z-50 font-[recoleta]'>DevOps.</h1>
                 <div className='w-[550px]'>
                     <h1 className='text-[#7a7a7a]'>Speeds up delivery with automated CI/CD, efficient infrastructure management, and real-time monitoring, ensuring scalable, reliable, and optimized operations.</h1>
                     <h1 className='text-4xl font-[recoleta] mt-12 text-white'>Learn More</h1>
@@ -345,7 +345,7 @@ const ServicesPage = () => {
             </div>
             {/* Backend Accordion Header */}
             <div className='w-full px-[120px] flex justify-between items-start mt-20 py-12'>
-                <h1 className='text-6xl text-[#B2FF02] z-50 font-[recoleta]'>Backend Development.</h1>
+                <h1 className='w-[400px] text-6xl text-[#B2FF02] z-50 font-[recoleta]'>Backend Development.</h1>
                 <div className='w-[550px]'>
                     <h1 className='text-[#7a7a7a]'>Builds robust, scalable server-side applications, ensuring seamless data management and system performance. We handle the backend, so your front-end excels.</h1>
                     <h1 className='text-4xl font-[recoleta] mt-12 text-white'>Learn More</h1>
@@ -419,7 +419,7 @@ const ServicesPage = () => {
             </div>
             {/* AI Solutions Accordion Header */}
             <div className='w-full px-[120px] flex justify-between items-start mt-20 py-12'>
-                <h1 className='text-6xl text-[#B2FF02] z-50 font-[recoleta]'>AI Solutions.</h1>
+                <h1 className='w-[400px] text-6xl text-[#B2FF02] z-50 font-[recoleta]'>AI Solutions.</h1>
                 <div className='w-[550px]'>
                     <h1 className='text-[#7a7a7a]'>Delivers cutting-edge, intelligent systems tailored to your business needs. We harness the power of AI to automate processes, enhance decision-making, and drive innovation.</h1>
                     <h1 className='text-4xl font-[recoleta] mt-12 text-white'>Learn More</h1>
@@ -484,7 +484,7 @@ const ServicesPage = () => {
             </div>
             {/* Web3 Accordion Header */}
             <div className='w-full px-[120px] flex justify-between items-start mt-20 py-12'>
-                <h1 className='text-6xl text-[#B2FF02] z-50 font-[recoleta]'>UX/UI.</h1>
+                <h1 className='w-[400px] text-6xl text-[#B2FF02] z-50 font-[recoleta]'>UX/UI.</h1>
                 <div className='w-[550px]'>
                     <h1 className='text-[#7a7a7a]'>Creates decentralized, blockchain-powered applications that empower your business. We focus on security, transparency, and innovation, bringing you into the future of the internet.</h1>
                     <h1 className='text-4xl font-[recoleta] mt-12 text-white'>Learn More</h1>
@@ -611,12 +611,12 @@ const ServicesPage = () => {
                     <h1 className='font-[recoleta] text-[38px] text-white ml-auto mt-8'>Send</h1>
                 </div>
             </div>
-            <div className='my-12 w-full max-w-full px-12'>
+            <div className='my-20 w-full max-w-full px-12'>
                 <div className='w-full bg-[#b2ff02] h-[3px]'>
 
                 </div>
             </div>
-            <div className='py-12 w-full px-12 flex justify-between'>
+            <div className='py-20 w-full px-12 flex justify-between'>
                 <img src={logo} className='w-1/4' />
                 <div>
                     <h1 className='text-[18px] text-white'>Our work:</h1>
