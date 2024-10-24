@@ -55,3 +55,30 @@
   font-weight: 900;
   font-style: normal;
 }
+
+/* Accordion content wrapper */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* When the accordion is open, set max-height to a large enough value to contain all content */
+.accordion-content-open {
+  max-height: 500px; /* Adjust based on your content size */
+}
+
+/* To ensure smooth display of the content, disable pointer events when closed */
+.accordion-content {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* When the accordion is open */
+.accordion-content-open {
+  pointer-events: all;
+  opacity: 1;
+  max-height: 500px; /* Adjust as needed for content */
+}
+
