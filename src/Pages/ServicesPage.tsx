@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Header from './../Components/Header'
 import ThreeDVisual from './../Components/Service3D'
 
@@ -16,7 +14,7 @@ const ServicesPage = () => {
                 <Header></Header>
             </div>
             <div className='w-full absolute flex justify-center bg-red-200 -top-[340px]'>
-                <ThreeDVisual className=""></ThreeDVisual>
+                <ThreeDVisual></ThreeDVisual>
             </div>
             <h1 className='text-[200px] text-[#B2FF02] mt-[180px] z-50 font-[recoleta] text-center w-full'>Services.</h1>
 
