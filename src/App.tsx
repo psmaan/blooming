@@ -11,6 +11,8 @@ import NFTPage from "./Pages/NFTPage";
 import HireUs from "./Pages/HireUs";
 import CulturePage from "./Pages/CulturePage";
 import ServicesPage from "./Pages/ServicesPage";
+import Branding from "./Pages/Services/Branding";
+
 
 function App() {
   return (
@@ -19,7 +21,8 @@ function App() {
         <Routes>
           <Route Component={Homepage} path="/"></Route>
           <Route Component={PortfolioPage} path="/portfolio"></Route>
-          <Route Component={ServicesPage} path="/servicesPage"></Route>
+          <Route Component={ServicesPage} path="/services"></Route>
+          <Route Component={Branding} path="/branding"></Route>
           <Route Component={VLprojectPage} path="/vlproject"></Route>
           <Route Component={AdorablePage} path="/adorable"></Route>
           <Route Component={UnibrainPage} path="/unibrain"></Route>

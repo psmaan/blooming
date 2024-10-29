@@ -8,6 +8,15 @@ export default {
       dk: "1224px",
     },
     extend: {
+      keyframes: {
+        'slide-infinite': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        'slide-infinite': 'slide-infinite 3s linear infinite',
+      },
       textStrokeWidth: {
         // Define custom property for stroke width
         2: "2px",

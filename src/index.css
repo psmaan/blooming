@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "Akzid";
   src: url("/fonts/Akzidenz-Grotesk Pro/akzidenzgroteskpro_regular.ttf");
@@ -81,4 +82,75 @@
   opacity: 1;
   max-height: 500px; /* Adjust as needed for content */
 }
+
+/* Infinite slider styling */
+.slider {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 130px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Full width */
+}
+
+/* Animation keyframes */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2)); /* Move half of the total width */
+  }
+}
+
+@keyframes anti-scroll {
+  0% {
+    transform: translateX(calc(-100% / 2)); /* Move half of the total width */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  height: 130px;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(200%); /* Ensure the slides take up double the space for looping */
+  animation: scroll 9s linear infinite; /* Run the scroll infinitely */
+}
+
+.message-slider > .slide-track {
+  display: flex;
+  width: calc(200%); /* Ensure the slides take up double the space for looping */
+  animation: anti-scroll 9s linear infinite; /* Run the scroll infinitely */
+}
+
+.slide {
+  height: 130px;
+  width: calc(100% / 2); /* Each slide takes 1/5th of the container width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 

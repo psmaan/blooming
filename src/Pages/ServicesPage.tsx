@@ -4,7 +4,7 @@ import ThreeDVisual from './../Components/Service3D';
 import arrow from './../assets/images/arrow.png';
 import logo from './../assets/images/bloominglogo.png';
 
-const ServicesPage = () => {
+const ServicesPage: React.FC = () => {
     // State to control accordion open/close state
     const [isBrandingOpen, setIsBrandingOpen] = useState(false);
     const [isSeoOpen, setIsSeoOpen] = useState(false);
