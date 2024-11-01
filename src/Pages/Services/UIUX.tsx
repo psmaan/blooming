@@ -13,7 +13,7 @@ import instagram from './../../assets/images/instagram.png';
 import behance from './../../assets/images/behance.png';
 import dribbble from './../../assets/images/dribbble.png';
 
-const Branding: React.FC = () => {
+const UIUX: React.FC = () => {
 
     const [nameFocus, setNameFocus] = useState(false);
     const [emailFocus, setEmailFocus] = useState(false);
@@ -34,43 +34,43 @@ const Branding: React.FC = () => {
                 </div>
                 <div className='absolute pl-4 sm:pl-16 lg:pl-24 xl:pl-36 mt-20 flex flex-col items-start'>
 
-                    <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[180px] xl:text-[220px] text-[#B2FF02]'>Branding.</h1>
-                    <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px]'>Shape your story into a compelling brand that stands out and creates lasting impact.</h1>
+                    <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[180px] xl:text-[220px] text-[#B2FF02]'>UI/UX.</h1>
+                    <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px]'>Create seamless interactions that delight users and enhance engagement at every touchpoint.</h1>
 
                     <div className='flex items-center justify-start mt-20'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>Strategy</h1>
+                        <h1 className='font-[recoleta] text-[40px] text-white'>UX</h1>
                         <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
                     </div>
                     <div className='flex items-center justify-start mt-8'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>Message</h1>
+                        <h1 className='font-[recoleta] text-[40px] text-white'>UI</h1>
                         <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
                     </div>
                     <div className='flex items-center justify-start mt-8'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>Visual</h1>
+                        <h1 className='font-[recoleta] text-[40px] text-white'>Apps</h1>
                         <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
                     </div>
                 </div>
             </div>
 
-            {/*Slider for Strategy */}
-            <div className="w-full mt-[240px] md:mt-[300px]  lg:mt-[500px] relative overflow-hidden">
+            {/*Slider for UX */}
+            <div className="w-full mt-[300px]  lg:mt-[500px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
                 <div className="slider">
                     <div className="slide-track">
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Strategy</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">UX</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Strategy</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">UX</span>
                         </div>
 
 
                         {/* Repeat the slides to ensure infinite scrolling */}
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Strategy</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">UX</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Strategy</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">UX</span>
                         </div>
                     </div>
                 </div>
@@ -82,18 +82,18 @@ const Branding: React.FC = () => {
                     <div className=''>
                         <ul className='w-[350px] list-outside list-disc  ml-2 text-white'>
                             <li className=' text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Competitive Analysis</span>
+                                <span className='text-white ml-1'>UX Audit</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Brand Archetypes</span>
+                                <span className='text-white ml-1'>User Flows</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Positioning</span>
+                                <span className='text-white ml-1'>Prototyping</span>
                             </li>
                         </ul>
                     </div>
                     <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
-                        We specialize in crafting a distinct and memorable identity for your brand, ensuring it stands out in a competitive market. Our approach begins with a deep understanding of your industry and audience, allowing us to develop a unique brand persona that resonates on all levels. We then focus on strategically placing your brand in the minds of your target customers, creating a powerful and lasting connection that drives loyalty and recognition. By positioning your brand effectively, we help you establish a strong market presence that leads to long-term success.
+                        We dive deep into understanding how users interact with your product, identifying opportunities to enhance their experience. Through a thoughtful and strategic process, we map out the ideal journey, ensuring every interaction is intuitive and engaging. We then bring these insights to life, crafting a seamless flow that guides users effortlessly. The result is a finely tuned experience that not only meets user needs but also delights them, turning interaction into a memorable journey.
                     </div>
                 </div>
             </div>
@@ -103,24 +103,24 @@ const Branding: React.FC = () => {
                 </div>
             </div>
 
-            {/*Slider for Message */}
+            {/*Slider for UI */}
             <div className="w-full mt-[120px] lg:mt-[200px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
                 <div className="slider message-slider">
                     <div className="slide-track">
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Message</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">UI</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Message</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">UI</span>
                         </div>
 
                         {/* Repeat slides for infinite scrolling */}
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Message</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">UI</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Message</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">UI</span>
                         </div>
                     </div>
                 </div>
@@ -132,18 +132,21 @@ const Branding: React.FC = () => {
                     <div className=''>
                         <ul className='w-[350px] list-outside list-disc ml-2 text-white'>
                             <li className='text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Tone of Voice</span>
+                                <span className='text-white ml-1'>Research</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Key Messages</span>
+                                <span className='text-white ml-1'>Wireframes</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Tagline</span>
+                                <span className='text-white ml-1'>Design System</span>
+                            </li>
+                            <li className='mt-2 text-[#B2FF02] text-[30px]'>
+                                <span className='text-white ml-1'>Responsive</span>
                             </li>
                         </ul>
                     </div>
                     <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
-                        Transform your brand’s essence into a powerful narrative that captures hearts and minds. By crafting a unique voice, we make sure your brand speaks with authenticity and purpose, creating a connection that resonates deeply with your audience. Each word is a brushstroke in your brand’s story, carefully chosen to convey your identity and values in a way that’s both memorable and impactful. Our creative approach ensures your brand’s message isn’t just heard—it’s felt, sparking engagement and forging lasting relationships.
+                        Crafting a captivating interface starts with a deep dive into your brand’s essence and user needs. We weave these insights into a cohesive visual language, where every detail is meticulously aligned to create a harmonious experience. The design evolves into a fluid, adaptable interface that feels natural on any device. The final product is more than just a pretty face—it’s a dynamic, engaging experience that connects with users and leaves a lasting impression.
                     </div>
                 </div>
             </div>
@@ -151,24 +154,24 @@ const Branding: React.FC = () => {
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
-            {/*Slider for Visual */}
+            {/*Slider for Apps */}
             <div className="w-full mt-[120px] lg:mt-[200px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
                 <div className="slider">
                     <div className="slide-track">
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Visual</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Apps</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Visual</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Apps</span>
                         </div>
 
                         {/* Repeat slides for infinite scrolling */}
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Visual</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Apps</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Visual</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Apps</span>
                         </div>
                     </div>
                 </div>
@@ -180,18 +183,18 @@ const Branding: React.FC = () => {
                     <div className=''>
                         <ul className='w-[350px] list-outside list-disc ml-2 text-white'>
                             <li className='text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Brandbook</span>
+                                <span className='text-white ml-1'>Web, Mobile App</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Style Guides</span>
+                                <span className='text-white ml-1'>Interations</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Packaging</span>
+                                <span className='text-white ml-1'>Mobile First</span>
                             </li>
                         </ul>
                     </div>
                     <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
-                        Breathe life into your brand through striking visual design that captivates and communicates. Every element is meticulously crafted to reflect your brand’s identity, ensuring a cohesive look that’s instantly recognizable. From the big picture to the smallest detail, we create visuals that tell your brand’s story in a way that resonates with your audience. Our creative approach turns your brand into a visual experience, making a lasting impression that stands out in any market.
+                        Designing an app that truly connects with users requires a deep understanding of how they interact across different platforms. Our process starts with envisioning a seamless experience that feels intuitive and engaging, whether on the web or mobile. By prioritizing a user-centric approach, we ensure that every interaction is fluid and responsive, creating an app that’s not only functional but also a pleasure to use. The result is an app that’s designed with the future in mind, effortlessly adapting to the demands of a mobile-first world while delivering a consistent and captivating experience.
                     </div>
                 </div>
             </div>
@@ -353,4 +356,4 @@ const Branding: React.FC = () => {
     )
 }
 
-export default Branding
+export default UIUX

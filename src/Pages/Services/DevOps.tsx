@@ -13,7 +13,7 @@ import instagram from './../../assets/images/instagram.png';
 import behance from './../../assets/images/behance.png';
 import dribbble from './../../assets/images/dribbble.png';
 
-const Branding: React.FC = () => {
+const DevOps: React.FC = () => {
 
     const [nameFocus, setNameFocus] = useState(false);
     const [emailFocus, setEmailFocus] = useState(false);
@@ -34,43 +34,43 @@ const Branding: React.FC = () => {
                 </div>
                 <div className='absolute pl-4 sm:pl-16 lg:pl-24 xl:pl-36 mt-20 flex flex-col items-start'>
 
-                    <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[180px] xl:text-[220px] text-[#B2FF02]'>Branding.</h1>
-                    <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px]'>Shape your story into a compelling brand that stands out and creates lasting impact.</h1>
+                    <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[180px] xl:text-[220px] text-[#B2FF02]'>DevOps.</h1>
+                    <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px]'>Optimize your development pipeline with automation and innovation, driving faster, more reliable results.</h1>
 
                     <div className='flex items-center justify-start mt-20'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>Strategy</h1>
+                        <h1 className='font-[recoleta] text-[40px] text-white'>CI/CD</h1>
                         <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
                     </div>
                     <div className='flex items-center justify-start mt-8'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>Message</h1>
+                        <h1 className='font-[recoleta] text-[40px] text-white'>Orchestration</h1>
                         <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
                     </div>
                     <div className='flex items-center justify-start mt-8'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>Visual</h1>
+                        <h1 className='font-[recoleta] text-[40px] text-white'>Monitoring</h1>
                         <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
                     </div>
                 </div>
             </div>
 
-            {/*Slider for Strategy */}
-            <div className="w-full mt-[240px] md:mt-[300px]  lg:mt-[500px] relative overflow-hidden">
+            {/*Slider for CI/CD */}
+            <div className="w-full mt-[320px]  lg:mt-[500px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
                 <div className="slider">
                     <div className="slide-track">
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Strategy</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">CI/CD</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Strategy</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">CI/CD</span>
                         </div>
 
 
                         {/* Repeat the slides to ensure infinite scrolling */}
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Strategy</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">CI/CD</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Strategy</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">CI/CD</span>
                         </div>
                     </div>
                 </div>
@@ -82,18 +82,21 @@ const Branding: React.FC = () => {
                     <div className=''>
                         <ul className='w-[350px] list-outside list-disc  ml-2 text-white'>
                             <li className=' text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Competitive Analysis</span>
+                                <span className='text-white ml-1'>JenKins</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Brand Archetypes</span>
+                                <span className='text-white ml-1'>GitLab</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Positioning</span>
+                                <span className='text-white ml-1'>Travis</span>
+                            </li>
+                            <li className=' text-[#B2FF02] text-[30px]'>
+                                <span className='text-white ml-1'>Azure</span>
                             </li>
                         </ul>
                     </div>
                     <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
-                        We specialize in crafting a distinct and memorable identity for your brand, ensuring it stands out in a competitive market. Our approach begins with a deep understanding of your industry and audience, allowing us to develop a unique brand persona that resonates on all levels. We then focus on strategically placing your brand in the minds of your target customers, creating a powerful and lasting connection that drives loyalty and recognition. By positioning your brand effectively, we help you establish a strong market presence that leads to long-term success.
+                        Streamlining development and deployment processes is key to delivering high-quality software quickly and efficiently. Our approach focuses on automating every step of the pipeline, ensuring that code moves seamlessly from development to production. By integrating continuous testing and deployment, we catch issues early and push updates faster, all while maintaining the highest standards of quality. The result is a robust, scalable system that accelerates delivery cycles and keeps your software ahead of the curve, allowing your team to focus on innovation rather than manual tasks.
                     </div>
                 </div>
             </div>
@@ -103,24 +106,24 @@ const Branding: React.FC = () => {
                 </div>
             </div>
 
-            {/*Slider for Message */}
+            {/*Slider for Orchestration */}
             <div className="w-full mt-[120px] lg:mt-[200px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
                 <div className="slider message-slider">
                     <div className="slide-track">
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Message</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Orchestration</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Message</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Orchestration</span>
                         </div>
 
                         {/* Repeat slides for infinite scrolling */}
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Message</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Orchestration</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Message</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Orchestration</span>
                         </div>
                     </div>
                 </div>
@@ -132,18 +135,18 @@ const Branding: React.FC = () => {
                     <div className=''>
                         <ul className='w-[350px] list-outside list-disc ml-2 text-white'>
                             <li className='text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Tone of Voice</span>
+                                <span className='text-white ml-1'>Ansible</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Key Messages</span>
+                                <span className='text-white ml-1'>Kubernetes</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Tagline</span>
+                                <span className='text-white ml-1'>Terraform</span>
                             </li>
                         </ul>
                     </div>
                     <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
-                        Transform your brand’s essence into a powerful narrative that captures hearts and minds. By crafting a unique voice, we make sure your brand speaks with authenticity and purpose, creating a connection that resonates deeply with your audience. Each word is a brushstroke in your brand’s story, carefully chosen to convey your identity and values in a way that’s both memorable and impactful. Our creative approach ensures your brand’s message isn’t just heard—it’s felt, sparking engagement and forging lasting relationships.
+                        Achieving seamless coordination across complex systems is vital for efficient operations. Our orchestration process unifies and automates workflows, enabling different environments to work in harmony. By automating infrastructure management and scaling, we ensure that resources are allocated precisely when and where they are needed, reducing overhead and minimizing errors. This streamlined approach not only enhances system reliability but also allows for rapid adjustments to meet changing demands, ensuring your operations remain agile and resilient in a fast-paced digital landscape.
                     </div>
                 </div>
             </div>
@@ -151,24 +154,24 @@ const Branding: React.FC = () => {
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
-            {/*Slider for Visual */}
+            {/*Slider for Monitoring */}
             <div className="w-full mt-[120px] lg:mt-[200px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
                 <div className="slider">
                     <div className="slide-track">
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Visual</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Monitoring</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Visual</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Monitoring</span>
                         </div>
 
                         {/* Repeat slides for infinite scrolling */}
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Visual</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Monitoring</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Visual</span>
+                            <span className="text-[40px] sm:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Monitoring</span>
                         </div>
                     </div>
                 </div>
@@ -180,18 +183,21 @@ const Branding: React.FC = () => {
                     <div className=''>
                         <ul className='w-[350px] list-outside list-disc ml-2 text-white'>
                             <li className='text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Brandbook</span>
+                                <span className='text-white ml-1'>Collection</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Style Guides</span>
+                                <span className='text-white ml-1'>Aggregation</span>
                             </li>
                             <li className='mt-2 text-[#B2FF02] text-[30px]'>
-                                <span className='text-white ml-1'>Packaging</span>
+                                <span className='text-white ml-1'>Incident Response</span>
+                            </li>
+                            <li className='mt-2 text-[#B2FF02] text-[30px]'>
+                                <span className='text-white ml-1'>Analysis</span>
                             </li>
                         </ul>
                     </div>
                     <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
-                        Breathe life into your brand through striking visual design that captivates and communicates. Every element is meticulously crafted to reflect your brand’s identity, ensuring a cohesive look that’s instantly recognizable. From the big picture to the smallest detail, we create visuals that tell your brand’s story in a way that resonates with your audience. Our creative approach turns your brand into a visual experience, making a lasting impression that stands out in any market.
+                        Keeping systems running smoothly requires constant vigilance and the ability to quickly adapt to any situation. Our process involves a proactive approach to tracking and analyzing system performance, ensuring that potential issues are identified before they escalate. By gathering and interpreting data from various sources, we create a clear picture of your system’s health. When anomalies are detected, swift action is taken to mitigate risks and maintain optimal performance. This approach ensures that your infrastructure remains stable, secure, and capable of handling the demands of your business, all while minimizing downtime and maximizing efficiency.
                     </div>
                 </div>
             </div>
@@ -353,4 +359,4 @@ const Branding: React.FC = () => {
     )
 }
 
-export default Branding
+export default DevOps

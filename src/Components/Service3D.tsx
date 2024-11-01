@@ -172,7 +172,7 @@ const Service3D: React.FC = () => {
         };
     }, []);
     return (
-        <div className=" absolute bg-black top-0 tb:absolute   tbl:absolute  pt-20 tb:pt-0 dk:absolute  overflow-hidden">
+        <div className=" absolute top-0 tb:absolute   tbl:absolute  pt-20 tb:pt-0 dk:absolute  overflow-hidden">
             <div className="w-min" id="CanvasRef" />
         </div>
     );

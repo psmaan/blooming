@@ -3,9 +3,14 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
+      mbl: "500px",
       tb: "700px",
       tbl: "1000px",
       dk: "1224px",
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px'
     },
     extend: {
       keyframes: {

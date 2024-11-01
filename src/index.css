@@ -83,6 +83,12 @@
   max-height: 500px; /* Adjust as needed for content */
 }
 
+@media (max-width: 768px) {
+  .accordion-content-open {
+    max-height: 700px; /* Adjust based on your content size */
+  }
+}
+
 /* Infinite slider styling */
 .slider {
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -120,6 +126,17 @@
   height: 130px;
   width: 200px;
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .slider::before,
+  .slider::after {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 200px;
+    z-index: 2;
+  }
 }
 
 .slider::after {
