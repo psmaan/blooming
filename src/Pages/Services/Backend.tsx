@@ -34,8 +34,8 @@ const Backend: React.FC = () => {
                 </div>
                 <div className='absolute pl-4 sm:pl-16 lg:pl-24 xl:pl-36 mt-20 flex flex-col items-start'>
 
-                    <h1 className='font-[recoleta] text-[45px] mbl:text-[60px] sm:text-[80px] md:text-[100px] lg:text-[160px] xl:text-[200px] text-[#B2FF02]'>Backend Development.</h1>
-                    <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px]'>Develop resilient, high-performance backend systems that scale with your business and fuel growth</h1>
+                    <h1 className='font-[recoleta] text-[40px] leading-[50px] mbl:text-[50px] mbl:leading-[60px] sm:text-[70px] sm:leading-[80px] md:text-[90px] md:leading-[100px] lg:text-[120px] lg:leading-[130px] xl:text-[150px] xl:leading-[180px] text-[#B2FF02]'>Backend Development.</h1>
+                    <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[762px]'>Develop resilient, high-performance backend systems that scale with your business and fuel growth</h1>
 
                     <div className='flex items-center justify-start mt-20'>
                         <h1 className='font-[recoleta] text-[40px] text-white'>API Development</h1>
@@ -55,22 +55,23 @@ const Backend: React.FC = () => {
             {/*Slider for API Development */}
             <div className="w-full mt-[240px] md:mt-[300px]  lg:mt-[500px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
-                <div className="slider">
+                <div className="slider thirty">
                     <div className="slide-track">
                         <div className="slide">
-                            <span className="text-[30px] sm:text-[40px] lg:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">API Development</span>
+                            <span className="text-[30px] sm:text-[40px] lg:text-[70px] text-[#B2FF02] font-[recoleta] mx-8">API Development</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[30px] sm:text-[40px] lg:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">API Development</span>
+                            <span className="text-[30px] sm:text-[40px] lg:text-[70px] text-[#B2FF02] font-[recoleta] mx-8">API Development</span>
                         </div>
+
 
 
                         {/* Repeat the slides to ensure infinite scrolling */}
                         <div className="slide">
-                            <span className="text-[30px] sm:text-[40px] lg:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">API Development</span>
+                            <span className="text-[30px] sm:text-[40px] lg:text-[70px] text-[#B2FF02] font-[recoleta] mx-8">API Development</span>
                         </div>
                         <div className="slide">
-                            <span className="text-[30px] sm:text-[40px] lg:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">API Development</span>
+                            <span className="text-[30px] sm:text-[40px] lg:text-[70px] text-[#B2FF02] font-[recoleta] mx-8">API Development</span>
                         </div>
                     </div>
                 </div>
@@ -78,9 +79,9 @@ const Backend: React.FC = () => {
             </div>
 
             <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24 '>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc  ml-2 text-white'>
+                        <ul className='w-[350px] list-outside list-disc text-white ml-6'>
                             <li className=' text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>RESTful</span>
                             </li>
@@ -100,10 +101,8 @@ const Backend: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full md:px-32 mt-20 md:mt-40'>
-                <div className='w-full h-[1px] bg-[#808080]'>
-
-                </div>
+            <div className='w-full px-12 lg:px-24 mt-20 md:mt-40'>
+                <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
             {/*Slider for Database */}
@@ -133,7 +132,7 @@ const Backend: React.FC = () => {
             <div className='mt-40 flex flex-col mx-auto w-full'>
                 <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc ml-2 text-white'>
+                        <ul className='w-[350px] list-outside list-disc text-white ml-6'>
                             <li className='text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>MySQL</span>
                             </li>
@@ -153,14 +152,14 @@ const Backend: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full md:px-32 mt-20 md:mt-40'>
+            <div className='w-full px-12 lg:px-24 mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
             {/*Slider for Architecture */}
             <div className="w-full mt-[120px] lg:mt-[200px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
-                <div className="slider">
+                <div className="slider twenty">
                     <div className="slide-track">
                         <div className="slide">
                             <span className="text-[30px] sm:text-[40px] lg:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Architecture</span>
@@ -184,7 +183,7 @@ const Backend: React.FC = () => {
             <div className='mt-40 flex flex-col mx-auto w-full'>
                 <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc ml-2 text-white'>
+                        <ul className='w-[350px] list-outside list-disc text-white ml-6'>
                             <li className='text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>Microservices</span>
                             </li>
@@ -205,7 +204,7 @@ const Backend: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full md:px-32 mt-20 md:mt-40'>
+            <div className='w-full px-12 lg:px-24 mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
@@ -253,9 +252,9 @@ const Backend: React.FC = () => {
                 </div>
             </div>
             <div className='w-full flex items-start py-[150px] px-[50px] xl:px-[120px] flex-col lg:flex-row'>
-                <div className='lg:w-[50%] w-full mt-12'>
-                    <h1 className='text-[60px] sm:text-[75px] md:text-[90px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
-                    <h1 className='text-[24px] mt-8 text-white font-light'>Describe your project and leave us your contact info, we’ll get back to you within 24 hours.</h1>
+                <div className='lg:w-[50%] w-full'>
+                    <h1 className='leading-[60px] text-[55px] sm:leading-[75px] sm:text-[70px] md:leading-[91px] md:text-[85px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
+                    <h1 className='text-[24px] mt-8 text-white font-light'>Describe your project and leave us your contact<br /> info, we’ll get back to you within 24 hours.</h1>
                 </div>
                 <div className="lg:w-[50%] w-full ml-auto flex flex-col mt-20 lg:mt-0">
                     {/* Name input */}
@@ -328,12 +327,12 @@ const Backend: React.FC = () => {
                 </div>
             </div>
             <div className='py-20 w-full px-4 lg:px-12 flex flex-col md:flex-row justify-between'>
-                <div className='w-1/3'>
+                <div className='w-[291px]'>
                     <img src={logo} className='mb-12 sm w-full' />
                 </div>
-                <div className='flex flex-row justify-between md:ml-[30px]'>
-                    <div className='flex flex-col md:flex-row md:items-center md:w-full'>
-                        <div className='mr-8'>
+                <div className='flex flex-row justify-between mx-auto w-1/2'>
+                    <div className='flex flex-col justify-around md:flex-row md:items-center md:w-full'>
+                        <div className=''>
                             <h1 className='text-[15px] lg:text-[18px] text-white'>Our work:</h1>
                             <h1 className='text-[15px] lg:text-[18px mt-6 text-white'>[UX\UI]</h1>
                             <h1 className='text-[15px] lg:text-[18px text-white'>[PRINT DESIGN]</h1>
@@ -352,10 +351,10 @@ const Backend: React.FC = () => {
                         <img className='h-[50px] w-[50px] my-4' src={instagram} />
                     </div>
                 </div>
-                <div className='mt-8 '>
+                <div className='mt-8'>
 
-                    <h1 className='text-white mb-8'>Tell us your needs</h1>
-                    <h1 className='font-[recoleta] text-[#B2FF02] text-4xl lg:text-6xl flex items-center'>Contact <img className='h-12 rotate-180' src={arrow}></img></h1>
+                    <h1 className='text-white mb-4'>Tell us your needs</h1>
+                    <h1 className='font-[recoleta] text-[#B2FF02] text-[38px] lg:text-[38px] flex items-center'>Contact <img className='h-12 rotate-180' src={arrow}></img></h1>
                 </div>
             </div>
         </div>

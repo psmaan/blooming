@@ -137,7 +137,7 @@ const Header: React.FC = () => {
                   02.
                 </label>
                 <Link
-                  to={"/servicesPage"}
+                  to={"/services"}
                   className=" text-4xl tb:text-6xl dk:text-8xl  whitespace-nowrap  font-bold hover:text-stroke-2-green text-end hover:text-black text-st"
                 >
                   SERVICES

@@ -57,7 +57,7 @@ const ServicesPage: React.FC = () => {
     const [project, setProject] = useState('');
 
     return (
-        <div className='w-screen bg-black overflow-hidden'>
+        <div className='w-screen bg-black overflow-x-hidden'>
             <div className='w-full px-4 pr-8 dk:px-16 dk:pr-16 py-8 z-10'>
                 <Header />
             </div>
@@ -574,9 +574,9 @@ const ServicesPage: React.FC = () => {
 
 
             <div className='w-full flex items-start py-[150px] px-[50px] xl:px-[120px] flex-col lg:flex-row'>
-                <div className='lg:w-[50%] w-full mt-12'>
-                    <h1 className='text-[60px] sm:text-[75px] md:text-[90px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
-                    <h1 className='text-[24px] mt-8 text-white font-light'>Describe your project and leave us your contact info, we’ll get back to you within 24 hours.</h1>
+                <div className='lg:w-[50%] w-full'>
+                    <h1 className='leading-[60px] text-[55px] sm:leading-[75px] sm:text-[70px] md:leading-[91px] md:text-[85px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
+                    <h1 className='text-[24px] mt-8 text-white font-light'>Describe your project and leave us your contact<br /> info, we’ll get back to you within 24 hours.</h1>
                 </div>
                 <div className="lg:w-[50%] w-full ml-auto flex flex-col mt-20 lg:mt-0">
                     {/* Name input */}
@@ -649,12 +649,12 @@ const ServicesPage: React.FC = () => {
                 </div>
             </div>
             <div className='py-20 w-full px-4 lg:px-12 flex flex-col md:flex-row justify-between'>
-                <div className='w-1/3'>
+                <div className='w-[291px]'>
                     <img src={logo} className='mb-12 sm w-full' />
                 </div>
-                <div className='flex flex-row justify-between md:ml-[30px]'>
-                    <div className='flex flex-col md:flex-row md:items-center md:w-full'>
-                        <div className='mr-8'>
+                <div className='flex flex-row justify-between mx-auto w-1/2'>
+                    <div className='flex flex-col justify-around md:flex-row md:items-center md:w-full'>
+                        <div className=''>
                             <h1 className='text-[15px] lg:text-[18px] text-white'>Our work:</h1>
                             <h1 className='text-[15px] lg:text-[18px mt-6 text-white'>[UX\UI]</h1>
                             <h1 className='text-[15px] lg:text-[18px text-white'>[PRINT DESIGN]</h1>
@@ -673,10 +673,10 @@ const ServicesPage: React.FC = () => {
                         <img className='h-[50px] w-[50px] my-4' src={instagram} />
                     </div>
                 </div>
-                <div className='mt-8 '>
+                <div className='mt-8'>
 
-                    <h1 className='text-white mb-8'>Tell us your needs</h1>
-                    <h1 className='font-[recoleta] text-[#B2FF02] text-4xl lg:text-6xl flex items-center'>Contact <img className='h-12 rotate-180' src={arrow}></img></h1>
+                    <h1 className='text-white mb-4'>Tell us your needs</h1>
+                    <h1 className='font-[recoleta] text-[#B2FF02] text-[38px] lg:text-[38px] flex items-center'>Contact <img className='h-12 rotate-180' src={arrow}></img></h1>
                 </div>
             </div>
         </div>

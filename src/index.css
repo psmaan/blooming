@@ -99,6 +99,27 @@
   width: 100%; /* Full width */
 }
 
+.slider.twenty {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 130px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 120%; /* Full width */
+}
+
+.slider.thirty {
+  width: 130%;
+}
+
+.slider.forty {
+  width: 140%;
+}
+
+.slider.fifty {
+  width: 150%;
+}
+
 /* Animation keyframes */
 @keyframes scroll {
   0% {
