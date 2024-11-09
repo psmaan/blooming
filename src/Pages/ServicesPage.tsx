@@ -58,13 +58,13 @@ const ServicesPage: React.FC = () => {
 
     return (
         <div className='w-screen bg-black overflow-x-hidden'>
-            <div className='w-full px-4 pr-8 dk:px-16 dk:pr-16 py-8 z-10'>
+            <div className='w-full px-4 pr-8 dk:px-16 dk:pr-16 py-8 z-50'>
                 <Header />
             </div>
             <div className='w-full absolute flex justify-center -top-[300px] mbl:-top-[400px] md:-top-[400px] lg:-top-[340px] z-10 opacity-70 overflow-hidden h-screen'>
                 <ThreeDVisual />
             </div>
-            <h1 className='text-7xl sm:text-8xl md:text-[120px] lg:text-[150px] relative dk:text-[220px] text-[#B2FF02] mt-[150px] sm:mt-[150px] md:mt-[150px] lg:mt-[200px] z-50 font-[recoleta] text-center w-full'>Services.</h1>
+            <h1 className='text-7xl sm:text-8xl md:text-[120px] lg:text-[150px] relative dk:text-[220px] text-[#B2FF02] mt-[150px] sm:mt-[150px] md:mt-[150px] lg:mt-[200px] z-20 font-[recoleta] text-center w-full'>Services.</h1>
 
             <div
                 className='w-full px-[30px] mbl:px-[60px] dk:px-[120px] flex justify-between items-start mt-20 py-12 z-50'
