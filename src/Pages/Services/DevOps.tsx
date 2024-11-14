@@ -28,11 +28,11 @@ const DevOps: React.FC = () => {
             <div className='w-full pr-4 md:p-8'>
                 <Header />
             </div>
-            <div className=' w-full flex overflow-hidden'>
+            <div className=' w-full flex overflow-hidden h-screen'>
                 <div className='w-[30%] md:w-[50%] ml-auto overflow-hidden relative '>
                     <ThreeDVisual />
                 </div>
-                <div className='absolute pl-4 sm:pl-16 lg:pl-24 xl:pl-36 mt-20 flex flex-col items-start'>
+                <div className='absolute pl-4 sm:pl-16 lg:pl-24 xl:pl-44 mt-20 flex flex-col items-start'>
 
                     <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[180px] xl:text-[220px] text-[#B2FF02]'>DevOps.</h1>
                     <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px]'>Optimize your development pipeline with automation and innovation, driving faster, more reliable results.</h1>
@@ -78,9 +78,9 @@ const DevOps: React.FC = () => {
             </div>
 
             <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc text-white ml-6'>
+                        <ul className='w-[250px] xl:w-[350px] list-outside list-disc text-white ml-6'>
                             <li className=' text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>JenKins</span>
                             </li>
@@ -100,7 +100,7 @@ const DevOps: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full px-12 lg:px-24 mt-20 md:mt-40'>
+            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
@@ -129,9 +129,9 @@ const DevOps: React.FC = () => {
             </div>
 
             <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc ml-6 text-white'>
+                        <ul className='w-[250px] xl:w-[350px] list-outside list-disc ml-6 text-white'>
                             <li className='text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>Ansible</span>
                             </li>
@@ -148,7 +148,7 @@ const DevOps: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full px-12 lg:px-24 mt-20 md:mt-40'>
+            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
@@ -177,9 +177,9 @@ const DevOps: React.FC = () => {
             </div>
 
             <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc text-white ml-6'>
+                        <ul className='w-[280px] xl:w-[350px] list-outside list-disc text-white ml-6'>
                             <li className='text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>Collection</span>
                             </li>
@@ -199,14 +199,14 @@ const DevOps: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full px-12 lg:px-24 mt-20 md:mt-40'>
+            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
 
             <div className='flex flex-col items-center w-full'>
                 <h1 className='text-[83px] text-[#B2FF02] font-[recoleta] mt-40 w-full text-center'>Latest Projects</h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 px-8 lg:px-20 xl:px-40 mt-20'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 px-8 lg:px-20 mt-20'>
                     <div>
                         <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center'>
                             <img className='h-full w-full object-cover' src={proj1} />
@@ -242,11 +242,11 @@ const DevOps: React.FC = () => {
                 </div>
             </div>
             <div className='w-full flex justify-center my-4 mt-20'>
-                <div className='w-full mx-[120px] h-[3px] bg-[#808080] rounded-full'>
+                <div className='w-full mx-20 h-[3px] bg-[#808080] rounded-full'>
 
                 </div>
             </div>
-            <div className='w-full flex items-start py-[150px] px-[50px] xl:px-[120px] flex-col lg:flex-row'>
+            <div className='w-full flex items-start py-[150px] px-[50px] lg:px-[60px] xl:px-[120px] flex-col lg:flex-row'>
                 <div className='lg:w-[50%] w-full'>
                     <h1 className='leading-[60px] text-[55px] sm:leading-[75px] sm:text-[70px] md:leading-[91px] md:text-[85px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
                     <h1 className='text-[24px] mt-8 text-white font-light'>Describe your project and leave us your contact<br /> info, we’ll get back to you within 24 hours.</h1>
@@ -316,40 +316,39 @@ const DevOps: React.FC = () => {
                     <h1 className='font-[recoleta] text-[38px] text-white ml-auto mt-8'>Send</h1>
                 </div>
             </div>
-            <div className='my-8 w-full max-w-full px-12'>
+            <div className='my-8 w-full max-w-full px-4 lg:px-20'>
                 <div className='w-full bg-[#b2ff02] h-[3px]'>
 
                 </div>
             </div>
-            <div className='py-20 w-full px-4 lg:px-12 flex flex-col md:flex-row justify-between'>
-                <div className='w-[291px]'>
+            <div className='py-20 w-full px-4 lg:px-20 flex flex-col md:flex-row justify-between'>
+                <div className='w-[280px]'>
                     <img src={logo} className='mb-12 sm w-full' />
                 </div>
-                <div className='flex flex-row justify-between mx-auto w-1/2'>
-                    <div className='flex flex-col justify-around md:flex-row md:items-center md:w-full'>
-                        <div className=''>
+                <div className='flex flex-row items-start mx-auto w-full'>
+                    <div className='flex flex-col justify-around md:justify-center md:flex-row md:items-center w-1/2 md:w-full h-full'>
+                        <div className='mr-8 lg:mr-16 xl:mr-28'>
                             <h1 className='text-[15px] lg:text-[18px] text-white'>Our work:</h1>
-                            <h1 className='text-[15px] lg:text-[18px mt-6 text-white'>[UX\UI]</h1>
-                            <h1 className='text-[15px] lg:text-[18px text-white'>[PRINT DESIGN]</h1>
+                            <h1 className='font-semibold text-[15px] lg:text-[18px mt-6 text-white'>[UX\UI]</h1>
+                            <h1 className='font-semibold text-[15px] lg:text-[18px text-white'>[PRINT DESIGN]</h1>
                         </div>
-                        <div>
+                        <div className='mt-[40px] md:mt-0'>
                             <h1 className='text-[15px] lg:text-[18px text-white'>Vancouver / Canada</h1>
-                            <h1 className='text-[15px] lg:text-[18px mt-6 text-white underline hidden sm:block'>hello@bloomingdesign.ca</h1>
-                            <h1 className='text-[15px] lg:text-[18px mt-6 text-white underline sm:hidden'>hello@<br></br>bloomingdesign.ca</h1>
+                            <h1 className='font-semibold text-[15px] lg:text-[18px mt-6 text-white underline hidden sm:block'>hello@bloomingdesign.ca</h1>
+                            <h1 className='font-semibold text-[15px] lg:text-[18px mt-6 text-white underline sm:hidden'>hello@<br></br>bloomingdesign.ca</h1>
                             <h1 className='text-[15px] lg:text-[18px text-white'>778-222-2122</h1>
                         </div>
                     </div>
-                    <div className='md:hidden md:w-[1px]'>
+                    <div className='md:hidden w-1/2 md:w-[0px]'>
                         <h1 className='text-white text-[20px]'>Let's be friends</h1>
                         <img className='h-[50px] w-[50px] my-4' src={dribbble} />
                         <img className='h-[50px] w-[50px] my-4' src={behance} />
                         <img className='h-[50px] w-[50px] my-4' src={instagram} />
                     </div>
                 </div>
-                <div className='mt-8'>
-
-                    <h1 className='text-white mb-4'>Tell us your needs</h1>
-                    <h1 className='font-[recoleta] text-[#B2FF02] text-[38px] lg:text-[38px] flex items-center'>Contact <img className='h-12 rotate-180' src={arrow}></img></h1>
+                <div className='mt-8 md:mt-0 md:relative -left-4'>
+                    <h1 className='text-white mb-4 font-light w-[150px]'>Tell us your needs</h1>
+                    <h1 className='font-[recoleta] text-[#B2FF02] text-[32px] lg:text-[32px] flex items-center'>Contact <img className='h-[40px] rotate-180' src={arrow}></img></h1>
                 </div>
             </div>
         </div>

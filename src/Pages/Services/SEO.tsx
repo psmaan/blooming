@@ -28,11 +28,11 @@ const SEO: React.FC = () => {
             <div className='w-full pr-4 md:p-8'>
                 <Header />
             </div>
-            <div className=' w-full flex overflow-hidden'>
+            <div className=' w-full flex overflow-hidden h-screen'>
                 <div className='w-[30%] md:w-[50%] ml-auto overflow-hidden relative '>
                     <ThreeDVisual />
                 </div>
-                <div className='absolute pl-4 sm:pl-16 lg:pl-24 xl:pl-36 mt-20 flex flex-col items-start'>
+                <div className='absolute pl-4 sm:pl-16 lg:pl-24 xl:pl-44 mt-20 flex flex-col items-start'>
 
                     <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[180px] xl:text-[220px] text-[#B2FF02]'>SEO.</h1>
                     <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px]'>Amplify your digital footprint with strategies that drive visibility, traffic, and sustainable growth.</h1>
@@ -78,9 +78,9 @@ const SEO: React.FC = () => {
             </div>
 
             <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc text-white ml-6'>
+                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-6'>
                             <li className=' text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>Key Word Research</span>
                             </li>
@@ -97,10 +97,8 @@ const SEO: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full md:px-32 mt-20 md:mt-40'>
-                <div className='w-full h-[1px] bg-[#808080]'>
-
-                </div>
+            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
+                <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
             {/*Slider for Link Building */}
@@ -128,9 +126,9 @@ const SEO: React.FC = () => {
             </div>
 
             <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc text-white ml-6'>
+                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-6'>
                             <li className='text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>Guest Blogging</span>
                             </li>
@@ -150,7 +148,7 @@ const SEO: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full px-12 lg:px-24 mt-20 md:mt-40'>
+            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
@@ -179,9 +177,9 @@ const SEO: React.FC = () => {
             </div>
 
             <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-24'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] list-outside list-disc text-white ml-6'>
+                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-6'>
                             <li className='text-[#B2FF02] text-[30px]'>
                                 <span className='text-white ml-1'>Cache Management</span>
                             </li>
@@ -201,7 +199,7 @@ const SEO: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full px-12 lg:px-24 mt-20 md:mt-40'>
+            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
