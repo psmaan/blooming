@@ -570,12 +570,12 @@ const ServicesPage: React.FC = () => {
 
 
 
-            <div className='w-full flex items-start py-[150px] px-[50px] lg:px-[60px] xl:px-[120px] flex-col lg:flex-row'>
+            <div className='w-full flex lg:justify-center items-start py-[150px] px-[50px] lg:px-[10%] flex-col lg:flex-row'>
                 <div className='lg:w-[50%] w-full'>
-                    <h1 className='leading-[60px] text-[55px] sm:leading-[75px] sm:text-[70px] md:leading-[91px] md:text-[85px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
-                    <h1 className='text-[24px] mt-8 text-white font-light'>Describe your project and leave us your contact<br /> info, we’ll get back to you within 24 hours.</h1>
+                    <h1 className='leading-[60px] text-[55px] sm:leading-[75px] sm:text-[70px] md:leading-[91px] md:text-[80px] xl:text-[90px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
+                    <h1 className='text-[20x] xl:text-[22px] mt-8 text-white font-light'>Describe your project and leave us your contact<br /> info, we’ll get back to you within 24 hours.</h1>
                 </div>
-                <div className="lg:w-[50%] w-full ml-auto flex flex-col mt-20 lg:mt-0">
+                <div className=" lg:w-[50%] w-full flex flex-col mt-20 lg:mt-0">
                     {/* Name input */}
                     <div className="relative mb-12">
                         <input
