@@ -38,7 +38,7 @@ const ServicesPage: React.FC = () => {
             <div className='w-full py-4 z-50 pr-8 dk:pr-0'>
                 <Header />
             </div>
-            <div className='w-full absolute flex justify-center -top-[250px] mbl:-top-[400px] md:-top-[400px] lg:-top-[340px] z-10 opacity-70 overflow-hidden h-screen'>
+            <div className='w-full absolute flex justify-center -top-[250px] mbl:-top-[400px] md:-top-[400px] lg:-top-[640px] z-10 opacity-70 overflow-hidden h-screen'>
                 <ThreeDVisual />
             </div>
             <h1 className='text-[64px] sm:text-8xl md:text-[120px] lg:text-[150px] relative dk:text-[190px] text-[#B2FF02] mt-[180px] md:mt-[180px] lg:mt-[190px] z-20 font-[recoleta] text-center w-full md:mb-[200px]'>Services.</h1>
@@ -131,7 +131,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
 
-            <div className='w-full flex justify-center my-4'>
+            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
                 <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
             </div>
 
@@ -221,7 +221,7 @@ const ServicesPage: React.FC = () => {
                 </div>
             </div>
 
-            <div className='w-full flex justify-center my-4'>
+            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
                 <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
             </div>
 
@@ -294,7 +294,7 @@ const ServicesPage: React.FC = () => {
                     </ul>
                 </div>
             </div>
-            <div className='w-full flex justify-center my-4'>
+            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
                 <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
             </div>
 
@@ -366,7 +366,7 @@ const ServicesPage: React.FC = () => {
                     </ul>
                 </div>
             </div>
-            <div className='w-full flex justify-center my-4'>
+            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
                 <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
             </div>
 
@@ -441,7 +441,7 @@ const ServicesPage: React.FC = () => {
                     </ul>
                 </div>
             </div>
-            <div className='w-full flex justify-center my-4'>
+            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
                 <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
             </div>
 
@@ -510,7 +510,7 @@ const ServicesPage: React.FC = () => {
                 </div>
             </div>
 
-            <div className='w-full flex justify-center my-4'>
+            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
                 <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
             </div>
 
