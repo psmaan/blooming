@@ -200,7 +200,7 @@ const Branding: React.FC = () => {
 
             <div className='flex flex-col items-center w-full'>
                 <h1 className='text-[40px] mbl:text-[60px] md:text-[83px] text-[#B2FF02] font-[recoleta] mt-40 w-full text-center'>Latest Projects</h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 px-[18px] lg:px-20 xl:px-40 mt-12'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 px-[18px] lg:px-20 mt-12'>
                     <div>
                         <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center'>
                             <img className='h-full w-full object-cover' src={proj1} />
