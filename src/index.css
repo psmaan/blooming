@@ -111,11 +111,6 @@ div, h1 {
 }
 
 .slider.twenty {
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 130px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
   width: 120%; /* Full width */
 }
 
@@ -129,6 +124,14 @@ div, h1 {
 
 .slider.fifty {
   width: 150%;
+}
+
+.slider.eighty {
+  width: 180%;
+}
+
+.slider.twohundred {
+  width: 240%;
 }
 
 /* Animation keyframes */
@@ -160,14 +163,20 @@ div, h1 {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
-  .slider::before,
-  .slider::after {
-    content: "";
-    position: absolute;
-    height: 90px;
-    width: 200px;
-    z-index: 2;
+.slide {
+  height: 130px;
+  width: calc(100% / 2); /* Each slide takes 1/5th of the container width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .slider {
+    height: 63px;
+  }
+  .slide {
+    height: 63px;
   }
 }
 
@@ -194,12 +203,6 @@ div, h1 {
   animation: anti-scroll 9s linear infinite; /* Run the scroll infinitely */
 }
 
-.slide {
-  height: 130px;
-  width: calc(100% / 2); /* Each slide takes 1/5th of the container width */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 

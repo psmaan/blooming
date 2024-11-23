@@ -42,7 +42,6 @@ const ServicesPage: React.FC = () => {
                 <ThreeDVisual />
             </div>
             <h1 className='text-[64px] sm:text-8xl md:text-[120px] lg:text-[150px] relative dk:text-[190px] text-[#B2FF02] mt-[180px] md:mt-[180px] lg:mt-[190px] z-20 font-[recoleta] text-center w-full md:mb-[200px]'>Services.</h1>
-
             <div
                 className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-12 py-12 z-10 relative'>
                 <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[60px] xl:text-[70px] leading-none text-[#B2FF02] font-[recoleta]'>Branding.</h1>

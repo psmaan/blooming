@@ -25,7 +25,7 @@ const AI: React.FC = () => {
 
     return (
         <div className='w-screen bg-black overflow-hidden flex flex-col items-start'>
-            <div className='w-full pr-4 md:p-8'>
+            <div className='w-full pr-[18px] md:p-8'>
                 <Header />
             </div>
             <div className=' w-full flex overflow-hidden h-screen'>
@@ -34,20 +34,20 @@ const AI: React.FC = () => {
                 </div>
                 <div className='absolute pl-4 sm:pl-16 lg:pl-24 xl:pl-44 mt-20 flex flex-col items-start'>
 
-                    <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[160px] xl:text-[200px] text-[#B2FF02]'>AI Solutions.</h1>
-                    <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[762px]'>Empower your business with advanced AI solutions that boost innovation, automate processes, and deliver smarter results.</h1>
+                    <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[180px] xl:text-[220px] text-[#B2FF02]'>AI Solutions.</h1>
+                    <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px] mt-12'>Empower your business with advanced AI solutions that boost innovation, automate processes, and deliver smarter results.</h1>
 
                     <div className='flex items-center justify-start mt-20'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>Custom AI</h1>
-                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
+                        <h1 className='font-[recoleta] text-[30px] mbl:text-[40px] text-white'>Custom AI</h1>
+                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[24px]'></div>
                     </div>
                     <div className='flex items-center justify-start mt-8'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>Process Optimization</h1>
-                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
+                        <h1 className='font-[recoleta] text-[30px] mbl:text-[40px] text-white'>Process Optimization</h1>
+                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[24px]'></div>
                     </div>
                     <div className='flex items-center justify-start mt-8'>
-                        <h1 className='font-[recoleta] text-[40px] text-white'>AI Integration</h1>
-                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[36px]'></div>
+                        <h1 className='font-[recoleta] text-[30px] mbl:text-[40px] text-white'>AI Integration</h1>
+                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[24px]'></div>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ const AI: React.FC = () => {
             {/*Slider for Custom AI */}
             <div className="w-full mt-[200px] xl:mt-[300px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
-                <div className="slider twenty">
+                <div className="slider forty">
                     <div className="slide-track">
                         <div className="slide">
                             <span className="text-[40px] lg:text-[80px]  text-[#B2FF02] font-[recoleta] mx-8">Custom AI</span>
@@ -77,35 +77,35 @@ const AI: React.FC = () => {
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
             </div>
 
-            <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
+            <div className='mt-24 md:mt-40 flex flex-col mx-auto w-full'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-[18px] lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-6'>
-                            <li className=' text-[#B2FF02] text-[30px]'>
+                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-4'>
+                            <li className=' text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>Hugging Face</span>
                             </li>
-                            <li className='mt-2 text-[#B2FF02] text-[30px]'>
+                            <li className='mt-2 text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>TensorFlow</span>
                             </li>
-                            <li className='mt-2 text-[#B2FF02] text-[30px]'>
+                            <li className='mt-2 text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>OpenCV</span>
                             </li>
                         </ul>
                     </div>
-                    <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
+                    <div className='xl:w-[780px] text-white text-[16px] mt-12 lg:mt-0'>
                         We start by understanding your unique challenges, crafting AI solutions tailored to meet your specific needs. Our process ensures the models we create are powerful, precise, and aligned with your goals.
                         From concept to deployment, we focus on innovation and adaptability, delivering AI that evolves with your business. This ensures your solution remains effective, empowering you to fully leverage the potential of artificial intelligence.
                     </div>
                 </div>
             </div>
-            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
+            <div className='w-full px-[18px] lg:px-[12%] mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
             {/*Slider for Process Optimization */}
             <div className="w-full mt-[120px] lg:mt-[200px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
-                <div className="slider message-slider fifty">
+                <div className="slider message-slider seventy">
                     <div className="slide-track">
                         <div className="slide">
                             <span className="text-[40px] lg:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">Process Optimization</span>
@@ -126,34 +126,34 @@ const AI: React.FC = () => {
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
             </div>
 
-            <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
+            <div className='mt-24 md:mt-40 flex flex-col mx-auto w-full'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-[18px] lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-6'>
-                            <li className='text-[#B2FF02] text-[30px]'>
+                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-4'>
+                            <li className=' text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>H2O.ai</span>
                             </li>
-                            <li className='mt-2 text-[#B2FF02] text-[30px]'>
+                            <li className='mt-2 text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>Blue Prism</span>
                             </li>
-                            <li className='mt-2 text-[#B2FF02] text-[30px]'>
+                            <li className='mt-2 text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>RapidMiner</span>
                             </li>
                         </ul>
                     </div>
-                    <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
+                    <div className='xl:w-[780px] text-white text-[16px] mt-12 lg:mt-0'>
                         Transforming your operations into a seamless, efficient powerhouse involves deploying intelligent automation that learns and adapts. We design systems that streamline workflows, reducing bottlenecks and enhancing productivity across the board. Every solution is crafted to integrate smoothly with your existing processes, ensuring a significant boost in efficiency without disrupting your operations.
                     </div>
                 </div>
             </div>
-            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
+            <div className='w-full px-[18px] lg:px-[12%] mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
             {/*Slider for AI Integration */}
             <div className="w-full mt-[120px] lg:mt-[200px] relative overflow-hidden">
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
-                <div className="slider twenty">
+                <div className="slider eighty">
                     <div className="slide-track">
                         <div className="slide">
                             <span className="text-[40px] lg:text-[80px] text-[#B2FF02] font-[recoleta] mx-8">AI Integration</span>
@@ -174,61 +174,61 @@ const AI: React.FC = () => {
                 <div className="h-[1px] w-full bg-[#B2ff02]"></div>
             </div>
 
-            <div className='mt-40 flex flex-col mx-auto w-full'>
-                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-12 lg:px-[12%]'>
+            <div className='mt-24 md:mt-40 flex flex-col mx-auto w-full'>
+                <div className='flex flex-col lg:flex-row items-start justify-between w-full px-[18px] lg:px-[12%]'>
                     <div className=''>
-                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-6'>
-                            <li className='text-[#B2FF02] text-[30px]'>
+                        <ul className='w-[350px] lg:w-[250px] xl:w-[350px] list-outside list-disc text-white ml-4'>
+                            <li className=' text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>MuleSoft</span>
                             </li>
-                            <li className='mt-2 text-[#B2FF02] text-[30px]'>
+                            <li className='mt-2 text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>SnapLogic</span>
                             </li>
-                            <li className='mt-2 text-[#B2FF02] text-[30px]'>
+                            <li className='mt-2 text-[#B2FF02] text-[18px]'>
                                 <span className='text-white ml-1'>Boomi</span>
                             </li>
                         </ul>
                     </div>
-                    <div className='xl:w-[780px] text-white text-[22px] mt-20 lg:mt-0'>
+                    <div className='xl:w-[780px] text-white text-[16px] mt-12 lg:mt-0'>
                         Seamlessly connecting intelligent systems with your existing infrastructure is key to unlocking their full potential. We specialize in integrating advanced AI into your workflows, ensuring all systems communicate effectively and work in harmony. Our approach guarantees a smooth transition, enhancing your operations without disruption, and empowering your business to leverage AI capabilities for maximum impact and efficiency.
                     </div>
                 </div>
             </div>
-            <div className='w-full px-12 lg:px-[12%] mt-20 md:mt-40'>
+            <div className='w-full px-[18px] lg:px-[12%] mt-20 md:mt-40'>
                 <div className='w-full h-[1px] bg-[#808080]'></div>
             </div>
 
 
             <div className='flex flex-col items-center w-full'>
-                <h1 className='text-[83px] text-[#B2FF02] font-[recoleta] mt-40 w-full text-center'>Latest Projects</h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 px-8 lg:px-20 mt-20'>
+                <h1 className='text-[40px] mbl:text-[60px] md:text-[83px] text-[#B2FF02] font-[recoleta] mt-40 w-full text-center'>Latest Projects</h1>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 px-[18px] lg:px-20 xl:px-40 mt-12'>
                     <div>
                         <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center'>
                             <img className='h-full w-full object-cover' src={proj1} />
                         </div>
-                        <h1 className=' mt-12 text-white font-[recoleta] text-[25px] text-center'>Vancouver Laptop</h1>
+                        <h1 className='mt-[20px] md:mt-12 text-white font-[recoleta] text-[25px] text-center'>Vancouver Laptop</h1>
                         <h1 className='mt-2 text-[#808080] font-[recoleta] text-[16px] text-center'>UI/UX Design, Branding</h1>
                     </div>
                     <div>
-                        <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center'>
+                        <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center mt-8 md:mt-0'>
                             <img className='h-full w-full object-cover' src={proj2} />
                         </div>
-                        <h1 className=' mt-12 text-white font-[recoleta] text-[25px] text-center'>Adorable Chocolate</h1>
+                        <h1 className='mt-[20px] md:mt-12 text-white font-[recoleta] text-[25px] text-center'>Adorable Chocolate</h1>
                         <h1 className='mt-2 text-[#808080] font-[recoleta] text-[16px] text-center'>Branding, Packaging, UI/UX</h1>
                     </div>
                     <div>
-                        <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center'>
+                        <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center mt-8 md:mt-0'>
                             <img className='h-full w-full object-cover' src={proj3} />
                         </div>
-                        <h1 className='mt-12 text-white font-[recoleta] text-[25px] text-center'>Quayqoffee</h1>
+                        <h1 className='mt-[20px] md:mt-12 text-white font-[recoleta] text-[25px] text-center'>Quayqoffee</h1>
                         <h1 className='mt-2 text-[#808080] font-[recoleta] text-[16px] text-center'>UI/UX, Branding</h1>
                     </div>
 
                     <div>
-                        <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center'>
+                        <div className='h-[400px] lg:h-[600px] w-full overflow-hidden flex justify-center items-center mt-8 md:mt-0'>
                             <img className='h-full w-full object-cover' src={proj4} />
                         </div>
-                        <h1 className=' mt-12 text-white font-[recoleta] text-[25px] text-center'>UniBrain Caps</h1>
+                        <h1 className='mt-[20px] md:mt-12 text-white font-[recoleta] text-[25px] text-center'>UniBrain Caps</h1>
                         <h1 className='mt-2 text-[#808080] font-[recoleta] text-[16px] text-center'>Branding, Packaging</h1>
                     </div>
                 </div>
@@ -236,17 +236,17 @@ const AI: React.FC = () => {
                     <h1 className='font-[recoleta] text-[24px]'>MORE</h1>
                 </div>
             </div>
-            <div className='w-full flex justify-center my-4 mt-20'>
-                <div className='w-full mx-20 h-[3px] bg-[#808080] rounded-full'>
+            <div className='w-full hidden md:flex justify-center my-4 mt-20'>
+                <div className='w-full mx-[120px] h-[3px] bg-[#808080] rounded-full'>
 
                 </div>
             </div>
-            <div className='w-full flex items-start py-[150px] px-[50px] lg:px-[60px] xl:px-[120px] flex-col lg:flex-row'>
+            <div className='w-full flex lg:justify-center items-start py-[150px] px-[16px] lg:px-[10%] flex-col lg:flex-row'>
                 <div className='lg:w-[50%] w-full'>
-                    <h1 className='leading-[60px] text-[55px] sm:leading-[75px] sm:text-[70px] md:leading-[91px] md:text-[85px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
-                    <h1 className='text-[24px] mt-8 text-white font-light'>Describe your project and leave us your contact<br /> info, we’ll get back to you within 24 hours.</h1>
+                    <h1 className='leading-none text-[48px] sm:text-[70px] md:leading-[91px] md:text-[80px] xl:text-[90px] font-[recoleta] text-[#B2FF02]'>Tell us<br></br> your needs</h1>
+                    <h1 className='text-[16px] xl:text-[22px] mt-8 text-white font-light'>Describe your project and leave us your contact<br /> info, we’ll get back to you within 24 hours.</h1>
                 </div>
-                <div className="lg:w-[50%] w-full ml-auto flex flex-col mt-20 lg:mt-0">
+                <div className=" lg:w-[50%] w-full flex flex-col mt-20 lg:mt-0">
                     {/* Name input */}
                     <div className="relative mb-12">
                         <input
@@ -308,42 +308,55 @@ const AI: React.FC = () => {
                     </div>
 
                     {/* Submit button */}
-                    <h1 className='font-[recoleta] text-[38px] text-white ml-auto mt-8'>Send</h1>
+                    <div className='flex items-center mt-8'>
+                        <h1 className='font-[recoleta] text-[20px] text-white ml-auto '>Send</h1>
+                        <div className='w-[40px] h-[2px] ml-[20px] bg-[#b2ff02]'>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div className='my-8 w-full max-w-full px-4 lg:px-20'>
+            <div className='mb-8 w-full max-w-full px-4 lg:px-20'>
                 <div className='w-full bg-[#b2ff02] h-[3px]'>
 
                 </div>
             </div>
             <div className='py-20 w-full px-4 lg:px-20 flex flex-col md:flex-row justify-between'>
-                <div className='w-[280px]'>
-                    <img src={logo} className='mb-12 sm w-full' />
+                <div className='w-[157px] md:w-[280px]'>
+                    <img src={logo} className='mb-12 w-full' />
                 </div>
                 <div className='flex flex-row items-start mx-auto w-full'>
-                    <div className='flex flex-col justify-around md:justify-center md:flex-row md:items-center w-1/2 md:w-full h-full'>
+                    <div className='flex flex-col justify-around md:justify-center md:flex-row md:items-center w-[55%] md:w-full h-full'>
                         <div className='mr-8 lg:mr-16 xl:mr-28'>
-                            <h1 className='text-[15px] lg:text-[18px] text-white'>Our work:</h1>
-                            <h1 className='font-semibold text-[15px] lg:text-[18px mt-6 text-white'>[UX\UI]</h1>
-                            <h1 className='font-semibold text-[15px] lg:text-[18px text-white'>[PRINT DESIGN]</h1>
+                            <h1 className='text-[16px] lg:text-[18px] text-white'>Our work:</h1>
+                            <h1 className='font-semibold text-[15px] lg:text-[18px] mt-6 leading-normal text-white'>[UX\UI]</h1>
+                            <h1 className='font-semibold leading-normal text-[15px] lg:text-[18px text-white'>[PRINT DESIGN]</h1>
                         </div>
                         <div className='mt-[40px] md:mt-0'>
-                            <h1 className='text-[15px] lg:text-[18px text-white'>Vancouver / Canada</h1>
+                            <h1 className='text-[15px] lg:text-[18px] text-white'>Vancouver / Canada</h1>
                             <h1 className='font-semibold text-[15px] lg:text-[18px mt-6 text-white underline hidden sm:block'>hello@bloomingdesign.ca</h1>
-                            <h1 className='font-semibold text-[15px] lg:text-[18px mt-6 text-white underline sm:hidden'>hello@<br></br>bloomingdesign.ca</h1>
-                            <h1 className='text-[15px] lg:text-[18px text-white'>778-222-2122</h1>
+                            <h1 className='font-semibold text-[16px] lg:text-[18px mt-6 text-white underline sm:hidden'>hello@<br></br>bloomingdesign.ca</h1>
+                            <h1 className='text-[16px] lg:text-[18px] text-white'>778-222-2122</h1>
                         </div>
                     </div>
-                    <div className='md:hidden w-1/2 md:w-[0px]'>
+                    <div className='md:hidden w-[45%] md:w-[0px]'>
                         <h1 className='text-white text-[20px]'>Let's be friends</h1>
                         <img className='h-[50px] w-[50px] my-4' src={dribbble} />
                         <img className='h-[50px] w-[50px] my-4' src={behance} />
                         <img className='h-[50px] w-[50px] my-4' src={instagram} />
                     </div>
                 </div>
+
+                <div className='w-full flex justify-center my-8 mt-20 md:hidden'>
+                    <div className='bg-[#b2ff02] h-[1px] w-full'>
+
+                    </div>
+                </div>
+
                 <div className='mt-8 md:mt-0 md:relative -left-4'>
-                    <h1 className='text-white mb-4 font-light w-[150px]'>Tell us your needs</h1>
-                    <h1 className='font-[recoleta] text-[#B2FF02] text-[32px] lg:text-[32px] flex items-center'>Contact <img className='h-[40px] rotate-180' src={arrow}></img></h1>
+                    <h1 className='text-white text-[16px] mb-4 font-light w-[150px]'>Tell us your needs</h1>
+                    <h1 className='font-[recoleta] text-[#B2FF02] text-[40px] lg:text-[32px] flex items-center'>Contact <img className='ml-4 w-[25px] rotate-180' src={arrow}></img></h1>
                 </div>
             </div>
         </div>

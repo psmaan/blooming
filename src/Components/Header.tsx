@@ -85,7 +85,7 @@ const Header: React.FC = () => {
           </button>
         ) : (
           <button
-            className="flex flex-row ml-6 dk:ml-12 flex-1 gap-2 items-center"
+            className="flex flex-row ml-[18px] dk:ml-12 flex-1 gap-2 items-center"
             onClick={() => setMenu(true)}
           >
             <i>{images.menu}</i>
