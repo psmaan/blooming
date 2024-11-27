@@ -74,7 +74,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* Branding Accordion Content - Hidden until isBrandingOpen is true */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isBrandingOpen ? 'accordion-content-open md:pt-16' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isBrandingOpen ? 'accordion-content-open md:py-16' : ''}`}>
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>Strategy</h1>
                     <ul className='list-outside list-disc text-sm md:text-lg lg:text-xl  ml-5 mt-8 text-white text-[16px] md:text-[22px]'>
@@ -166,7 +166,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* SEO Accordion Content - Hidden until isSeoOpen is true */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isSeoOpen ? 'accordion-content-open md:pt-16' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isSeoOpen ? 'accordion-content-open md:py-16' : ''}`}>
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>Content</h1>
                     <ul className='list-outside list-disc text-sm md:text-lg lg:text-xl  ml-5 mt-8 text-white text-[16px] md:text-[22px]'>
@@ -258,7 +258,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* UI/UX Accordion Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isUxuiOpen ? 'accordion-content-open md:pt-16' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isUxuiOpen ? 'accordion-content-open md:py-16' : ''}`}>
                 {/* UX Section */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>UX</h1>
@@ -331,7 +331,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* DevOps Accordion Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isDevopsOpen ? 'accordion-content-open md:pt-16' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isDevopsOpen ? 'accordion-content-open md:py-16' : ''}`}>
                 {/* CI/CD Section */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>CI/CD</h1>
@@ -405,7 +405,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* Backend Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isBackendOpen ? 'accordion-content-open md:pt-16' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isBackendOpen ? 'accordion-content-open md:py-16' : ''}`}>
                 {/* API Development */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>API Development</h1>
@@ -477,7 +477,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* AI Solutions Accordion Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isAIOpen ? 'accordion-content-open md:pt-16' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isAIOpen ? 'accordion-content-open md:py-16' : ''}`}>
                 {/* Custom AI */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>Custom AI</h1>
@@ -546,7 +546,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* Web3 Accordion Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isWebOpen ? 'accordion-content-open md:pt-16' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isWebOpen ? 'accordion-content-open md:py-16' : ''}`}>
                 {/* Blockchain */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>Blockchain</h1>
