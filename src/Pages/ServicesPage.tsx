@@ -34,16 +34,16 @@ const ServicesPage: React.FC = () => {
     const [project, setProject] = useState('');
 
     return (
-        <div className='w-screen bg-black overflow-x-hidden'>
+        <div className='w-screen bg-black overflow-x-hidden relative'>
             <div className='w-full py-4 z-50 pr-8 dk:pr-0'>
                 <Header />
             </div>
-            <div className='w-full absolute flex justify-center -top-[250px] mbl:-top-[400px] md:-top-[400px] lg:-top-[640px] z-10 opacity-70 overflow-hidden h-screen'>
+            <div className='w-full absolute flex justify-center -top-[250px] mbl:-top-[400px] md:-top-[400px] lg:-top-[360px] dk:-top-[400px] z-10 opacity-70 overflow-y-visible h-[1200px]'>
                 <ThreeDVisual />
             </div>
             <h1 className='text-[64px] sm:text-8xl md:text-[120px] lg:text-[150px] relative dk:text-[190px] text-[#B2FF02] mt-[180px] md:mt-[180px] lg:mt-[190px] z-20 font-[recoleta] text-center w-full md:mb-[200px]'>Services.</h1>
             <div
-                className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-12 py-12 z-10 relative'>
+                className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-24 py-12 pt-24 z-10 relative'>
                 <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[60px] xl:text-[70px] leading-none text-[#B2FF02] font-[recoleta]'>Branding.</h1>
                 <div className='w-[550px] hidden lg:block'>
                     <h1 className='text-[#7a7a7a] text-[16px]'>Our Branding services define and develop a unique identity for your business, ensuring it stands out and resonates with your audience. Let us help you create a lasting impression.</h1>
@@ -74,7 +74,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* Branding Accordion Content - Hidden until isBrandingOpen is true */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 accordion-content ${isBrandingOpen ? 'accordion-content-open mt-12' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isBrandingOpen ? 'accordion-content-open md:pt-16' : ''}`}>
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>Strategy</h1>
                     <ul className='list-outside list-disc text-sm md:text-lg lg:text-xl  ml-5 mt-8 text-white text-[16px] md:text-[22px]'>
@@ -130,12 +130,12 @@ const ServicesPage: React.FC = () => {
             </div>
 
 
-            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
-                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
+            <div className='w-full flex justify-center mb-[80px] sm:my-[150px]'>
+                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[1px] bg-[#808080] rounded-full'></div>
             </div>
 
             {/* SEO Accordion Header */}
-            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-12 py-12 z-10 relative
+            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start py-12 pt-0 z-10 relative
             '                >
                 <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[60px] xl:text-[70px] leading-none text-[#B2FF02] font-[recoleta]'>SEO.</h1>
                 <div className='w-[550px] hidden lg:block'>
@@ -166,7 +166,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* SEO Accordion Content - Hidden until isSeoOpen is true */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 accordion-content ${isSeoOpen ? 'accordion-content-open mt-12' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isSeoOpen ? 'accordion-content-open md:pt-16' : ''}`}>
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>Content</h1>
                     <ul className='list-outside list-disc text-sm md:text-lg lg:text-xl  ml-5 mt-8 text-white text-[16px] md:text-[22px]'>
@@ -220,13 +220,14 @@ const ServicesPage: React.FC = () => {
                 </div>
             </div>
 
-            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
-                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
+            <div className='w-full flex justify-center mb-[80px] sm:my-[150px]'>
+                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[1px] bg-[#808080] rounded-full'></div>
             </div>
 
 
             {/* UI/UX Accordion Header */}
-            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-12 py-12 z-10 relative z-50'
+            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start py-12 pt-0 z-10 relative
+            '
             >
                 <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[60px] xl:text-[70px] leading-none text-[#B2FF02] font-[recoleta]'>UX/UI.</h1>
                 <div className='w-[550px] hidden lg:block'>
@@ -245,7 +246,7 @@ const ServicesPage: React.FC = () => {
                         alt="Arrow"
                     />
                 </div>
-            </div>
+            </div >
             <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] lg:hidden'>
                 <h1 className='text-[#7a7a7a] text-[16px]'>Focuses on creating intuitive, visually appealing interfaces with seamless user experiences, ensuring responsive design and fast, efficient performance across all devices.</h1>
                 <Link to='/uiux'>
@@ -257,7 +258,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* UI/UX Accordion Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 accordion-content ${isUxuiOpen ? 'accordion-content-open mt-12' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isUxuiOpen ? 'accordion-content-open md:pt-16' : ''}`}>
                 {/* UX Section */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>UX</h1>
@@ -293,15 +294,16 @@ const ServicesPage: React.FC = () => {
                     </ul>
                 </div>
             </div>
-            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
-                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
+            <div className='w-full flex justify-center mb-[80px] sm:my-[150px]'>
+                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[1px] bg-[#808080] rounded-full'></div>
             </div>
 
             {/* DevOps Accordion Header */}
-            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-12 py-12 z-10 relative z-50'
+            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start py-12 pt-0 z-10 relative
+            '
             >
                 <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[60px] xl:text-[70px] leading-none text-[#B2FF02] font-[recoleta]'>DevOps.</h1>
-                <div className='w-[550px] hidden lg:block'>
+                <div className='w-[550px] hidden lg:block' >
                     <h1 className='text-[#7a7a7a] text-[16px]'>Speeds up delivery with automated CI/CD, efficient infrastructure management, and real-time monitoring, ensuring scalable, reliable, and optimized operations.</h1>
                     <Link to='/devops'>
                         <div className='w-full flex items-center md:mt-12 mt-6'>
@@ -309,7 +311,7 @@ const ServicesPage: React.FC = () => {
                             <div className="h-[2px] w-[28px] md:w-[40px] ml-3 md:ml-8 rounded-full bg-[#b2ff02]"></div>
                         </div>
                     </Link>
-                </div>
+                </div >
                 <div onClick={toggleDevopsAccordion} className='cursor-pointer mr-[2px]'>
                     <img
                         className={`w-[20px] mbl:w-[48px] transform transition-transformsor-pointer mr-[2px]' duration-300 ${isDevopsOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -317,7 +319,7 @@ const ServicesPage: React.FC = () => {
                         alt="Arrow"
                     />
                 </div>
-            </div>
+            </div >
             <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] lg:hidden'>
                 <h1 className='text-[#7a7a7a] text-[16px]'>Speeds up delivery with automated CI/CD, efficient infrastructure management, and real-time monitoring, ensuring scalable, reliable, and optimized operations.</h1>
                 <Link to='/devops'>
@@ -329,7 +331,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* DevOps Accordion Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 accordion-content ${isDevopsOpen ? 'accordion-content-open mt-12' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isDevopsOpen ? 'accordion-content-open md:pt-16' : ''}`}>
                 {/* CI/CD Section */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>CI/CD</h1>
@@ -365,16 +367,17 @@ const ServicesPage: React.FC = () => {
                     </ul>
                 </div>
             </div>
-            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
-                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
+            <div className='w-full flex justify-center mb-[80px] sm:my-[150px]'>
+                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[1px] bg-[#808080] rounded-full'></div>
             </div>
 
 
             {/* Backend Accordion Header */}
-            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-12 py-12 z-10 relative z-50'
+            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start py-12 pt-0 z-10 relative
+            '
             >
-                <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[45px] xl:text-[60px] leading-none text-[#B2FF02] font-[recoleta]'>Backend Development.</h1>
-                <div className='w-[550px] hidden lg:block'>
+                <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[50px] xl:text-[60px] leading-none text-[#B2FF02] font-[recoleta]'>Backend Development.</h1>
+                <div className='w-[550px] hidden lg:block' >
                     <h1 className='text-[#7a7a7a] text-[16px]'>Builds robust, scalable server-side applications, ensuring seamless data management and system performance. We handle the backend, so your front-end excels.</h1>
                     <Link to='/backend'>
                         <div className='w-full flex items-center md:mt-12 mt-6'>
@@ -382,7 +385,7 @@ const ServicesPage: React.FC = () => {
                             <div className="h-[2px] w-[28px] md:w-[40px] ml-3 md:ml-8 rounded-full bg-[#b2ff02]"></div>
                         </div>
                     </Link>
-                </div>
+                </div >
                 <div onClick={toggleBackendAccordion} className='cursor-pointer mr-[2px]'>
                     <img
                         className={`w-[20px] mbl:w-[48px] transform transition-transformsor-pointer mr-[2px]' duration-300 ${isBackendOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -390,7 +393,7 @@ const ServicesPage: React.FC = () => {
                         alt="Arrow"
                     />
                 </div>
-            </div>
+            </div >
             <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] lg:hidden'>
                 <h1 className='text-[#7a7a7a] text-[16px]'>Builds robust, scalable server-side applications, ensuring seamless data management and system performance. We handle the backend, so your front-end excels.</h1>
                 <Link to='/backend'>
@@ -402,7 +405,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* Backend Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 accordion-content ${isBackendOpen ? 'accordion-content-open mt-12' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isBackendOpen ? 'accordion-content-open md:pt-16' : ''}`}>
                 {/* API Development */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>API Development</h1>
@@ -440,16 +443,17 @@ const ServicesPage: React.FC = () => {
                     </ul>
                 </div>
             </div>
-            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
-                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
+            <div className='w-full flex justify-center mb-[80px] sm:my-[150px]'>
+                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[1px] bg-[#808080] rounded-full'></div>
             </div>
 
 
             {/* AI Solutions Accordion Header */}
-            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-12 py-12 z-10 relative z-50'
+            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start py-12 pt-0 z-10 relative
+            '
             >
                 <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[60px] xl:text-[70px] leading-none text-[#B2FF02] font-[recoleta]'>AI Solutions.</h1>
-                <div className='w-[550px] hidden lg:block'>
+                <div className='w-[550px] hidden lg:block' >
                     <h1 className='text-[#7a7a7a] text-[16px]'>Delivers cutting-edge, intelligent systems tailored to your business needs. We harness the power of AI to automate processes, enhance decision-making, and drive innovation.</h1>
                     <Link to='/web3'>
                         <div className='w-full flex items-center md:mt-12 mt-6'>
@@ -457,11 +461,11 @@ const ServicesPage: React.FC = () => {
                             <div className="h-[2px] w-[28px] md:w-[40px] ml-3 md:ml-8 rounded-full bg-[#b2ff02]"></div>
                         </div>
                     </Link>
-                </div>
+                </div >
                 <div onClick={toggleAIAccordion} className='cursor-pointer mr-[2px]'>
                     <img className={`w-[20px] mbl:w-[48px] transform transition-transformsor-pointer mr-[2px]' duration-300 ${isAIOpen ? 'rotate-180' : 'rotate-0'}`} src={arrow} alt="Arrow" />
                 </div>
-            </div>
+            </div >
             <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] lg:hidden'>
                 <h1 className='text-[#7a7a7a] text-[16px]'>Delivers cutting-edge, intelligent systems tailored to your business needs. We harness the power of AI to automate processes, enhance decision-making, and drive innovation.</h1>
                 <Link to='/web3'>
@@ -473,7 +477,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* AI Solutions Accordion Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 accordion-content ${isAIOpen ? 'accordion-content-open mt-12' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isAIOpen ? 'accordion-content-open md:pt-16' : ''}`}>
                 {/* Custom AI */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>Custom AI</h1>
@@ -509,15 +513,16 @@ const ServicesPage: React.FC = () => {
                 </div>
             </div>
 
-            <div className='w-full flex justify-center my-4 md:my-[120px] md:mb-[150px]'>
-                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[3px] bg-[#808080] rounded-full'></div>
+            <div className='w-full flex justify-center mb-[80px] sm:my-[150px]'>
+                <div className='w-full mx-[18px] mbl:mx-[60px] lg:mx-[10%] h-[1px] bg-[#808080] rounded-full'></div>
             </div>
 
             {/* Web3 Accordion Header */}
-            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start mt-12 py-12 z-10 relative z-50'
+            <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex justify-between items-center md:items-start py-12 pt-0 z-10 relative
+            '
             >
                 <h1 className='w-[350px] dk:w-[400px] text-[40px] mbl:text-[60px] xl:text-[70px] leading-none text-[#B2FF02] font-[recoleta]'>Web3.</h1>
-                <div className='w-[550px] hidden lg:block'>
+                <div className='w-[550px] hidden lg:block' >
                     <h1 className='text-[#7a7a7a] text-[16px]'>Empowers decentralized applications, giving your users control of their data. We provide secure, blockchain-based solutions to build the next generation of the internet.</h1>
                     <Link to='/web3'>
                         <div className='w-full flex items-center md:mt-12 mt-6'>
@@ -525,11 +530,11 @@ const ServicesPage: React.FC = () => {
                             <div className="h-[2px] w-[28px] md:w-[40px] ml-3 md:ml-8 rounded-full bg-[#b2ff02]"></div>
                         </div>
                     </Link>
-                </div>
+                </div >
                 <div onClick={toggleWebAccordion} className='cursor-pointer mr-[2px]'>
                     <img className={`w-[20px] mbl:w-[48px] transform transition-transformsor-pointer mr-[2px]' duration-300 ${isWebOpen ? 'rotate-180' : 'rotate-0'}`} src={arrow} alt="Arrow" />
                 </div>
-            </div>
+            </div >
             <div className='w-full px-[18px] mbl:px-[60px] lg:px-[10%] lg:hidden'>
                 <h1 className='text-[#7a7a7a] text-[16px]'>Empowers decentralized applications, giving your users control of their data. We provide secure, blockchain-based solutions to build the next generation of the internet.</h1>
                 <Link to='/web3'>
@@ -541,7 +546,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* Web3 Accordion Content */}
-            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 accordion-content ${isWebOpen ? 'accordion-content-open mt-12' : ''}`}>
+            <div className={`w-full px-[18px] mbl:px-[60px] lg:px-[10%] flex flex-col sm:flex-row justify-between items-start py-8 md:py-0 accordion-content ${isWebOpen ? 'accordion-content-open md:pt-16' : ''}`}>
                 {/* Blockchain */}
                 <div>
                     <h1 className='text-[25px] md:text-[40px] text-white z-50 font-[recoleta]'>Blockchain</h1>
@@ -697,7 +702,7 @@ const ServicesPage: React.FC = () => {
                     <h1 className='font-[recoleta] text-[#B2FF02] text-[40px] lg:text-[32px] flex items-center'>Contact <img className='ml-4 w-[25px] rotate-180' src={arrow}></img></h1>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

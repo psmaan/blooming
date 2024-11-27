@@ -72,7 +72,7 @@ div, h1 {
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: max-height 1s all;
 }
 
 /* When the accordion is open, set max-height to a large enough value to contain all content */
@@ -84,7 +84,7 @@ div, h1 {
 .accordion-content {
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1s all;
 }
 
 /* When the accordion is open */
