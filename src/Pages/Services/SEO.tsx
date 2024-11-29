@@ -36,17 +36,29 @@ const SEO: React.FC = () => {
                     <h1 className='font-[recoleta] text-[70px] mbl:text-[90px] sm:text-[120px] md:text-[150px] lg:text-[180px] xl:text-[220px] text-[#B2FF02]'>SEO.</h1>
                     <h1 className='font-[recoleta] text-[32px] mbl:text-[45px] lg:text-[52px] text-[#818180] md:w-[678px] mt-12'>Amplify your digital footprint with strategies that drive visibility, traffic, and sustainable growth.</h1>
 
-                    <div className='flex items-center justify-start mt-20'>
-                        <h1 className='font-[recoleta] text-[30px] mbl:text-[40px] text-white'>Content</h1>
-                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[32px]'></div>
+                    <div className="flex items-center justify-start mt-20 group">
+                        <h1
+                            className="font-[recoleta] text-[30px] mbl:text-[40px] text-white group-hover:translate-x-[10px] transition-transform duration-500 ease-in-out"
+                        >Content</h1>
+                        <div
+                            className="h-[2px] w-[40px] bg-[#B2FF02] ml-[24px] group-hover:w-[60px] transition-all duration-500 ease-in-out"
+                        ></div>
                     </div>
-                    <div className='flex items-center justify-start mt-8'>
-                        <h1 className='font-[recoleta] text-[30px] mbl:text-[40px] text-white'>Link Building</h1>
-                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[32px]'></div>
+                    <div className="flex items-center justify-start mt-8 group">
+                        <h1
+                            className="font-[recoleta] text-[30px] mbl:text-[40px] text-white group-hover:translate-x-[10px] transition-transform duration-500 ease-in-out"
+                        >Link Building</h1>
+                        <div
+                            className="h-[2px] w-[40px] bg-[#B2FF02] ml-[24px] group-hover:w-[60px] transition-all duration-500 ease-in-out"
+                        ></div>
                     </div>
-                    <div className='flex items-center justify-start mt-8'>
-                        <h1 className='font-[recoleta] text-[30px] mbl:text-[40px] text-white'>Accessibility</h1>
-                        <div className='h-[2px] w-[40px] bg-[#B2FF02] ml-[32px]'></div>
+                    <div className="flex items-center justify-start mt-8 group">
+                        <h1
+                            className="font-[recoleta] text-[30px] mbl:text-[40px] text-white group-hover:translate-x-[10px] transition-transform duration-500 ease-in-out"
+                        >Accessibility</h1>
+                        <div
+                            className="h-[2px] w-[40px] bg-[#B2FF02] ml-[24px] group-hover:w-[60px] transition-all duration-500 ease-in-out"
+                        ></div>
                     </div>
                 </div>
             </div>
@@ -258,10 +270,14 @@ const SEO: React.FC = () => {
                             id="name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            className="block w-full px-2 py-2 bg-transparent text-white border-b-2 border-[#5a8001] focus:outline-none focus:ring-0 focus:border-[#b2ff02]"
+                            className="block w-full px-2 py-2 bg-transparent text-white border-b-[1px] border-[#5a8001] focus:outline-none focus:ring-0"
                             onFocus={() => setNameFocus(true)}
                             onBlur={() => setNameFocus(false)}
                         />
+                        <span
+                            className={`absolute bottom-0 left-0 h-[2px] w-full bg-[#b2ff02] transform scale-x-0 origin-left transition-transform duration-300 ${nameFocus || name ? 'scale-x-100' : ''
+                                }`}
+                        ></span>
                         <label
                             htmlFor="name"
                             className={`font-[recoleta] absolute left-2 top-2 transition-all duration-300 pointer-events-none text-white transform ${nameFocus || name ? 'translate-y-[-24px] text-sm' : 'text-xl'
@@ -278,10 +294,14 @@ const SEO: React.FC = () => {
                             id="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className="block w-full px-2 py-2 bg-transparent text-white border-b-2 border-[#5a8001] focus:outline-none focus:ring-0 focus:border-[#b2ff02]"
+                            className="block w-full px-2 py-2 bg-transparent text-white border-b-[1px] border-[#5a8001] focus:outline-none focus:ring-0"
                             onFocus={() => setEmailFocus(true)}
                             onBlur={() => setEmailFocus(false)}
                         />
+                        <span
+                            className={`absolute bottom-0 left-0 h-[2px] w-full bg-[#b2ff02] transform scale-x-0 origin-left transition-transform duration-300 ${emailFocus || email ? 'scale-x-100' : ''
+                                }`}
+                        ></span>
                         <label
                             htmlFor="email"
                             className={`font-[recoleta] absolute left-2 top-2 transition-all duration-300 pointer-events-none text-white transform ${emailFocus || email ? 'translate-y-[-24px] text-sm' : 'text-xl'
@@ -297,11 +317,15 @@ const SEO: React.FC = () => {
                             id="project"
                             value={project}
                             onChange={(e) => setProject(e.target.value)}
-                            className="block w-full px-2 py-2 bg-transparent text-white border-b-2 border-[#5a8001] focus:outline-none focus:ring-0 focus:border-[#b2ff02]"
+                            className="block w-full px-2 py-2 bg-transparent text-white border-b-[1px] border-[#5a8001] focus:outline-none focus:ring-0"
                             rows={10}
                             onFocus={() => setProjectFocus(true)}
                             onBlur={() => setProjectFocus(false)}
                         ></textarea>
+                        <span
+                            className={`absolute bottom-0 left-0 h-[2px] w-full bg-[#b2ff02] transform scale-x-0 origin-left transition-transform duration-300 ${projectFocus || project ? 'scale-x-100' : ''
+                                }`}
+                        ></span>
                         <label
                             htmlFor="project"
                             className={`font-[recoleta] absolute left-2 top-2 transition-all duration-300 pointer-events-none text-white transform ${projectFocus || project ? 'translate-y-[-24px] text-sm' : 'text-xl'
@@ -310,6 +334,7 @@ const SEO: React.FC = () => {
                             Tell us about your project frankly :)
                         </label>
                     </div>
+
 
                     {/* Submit button */}
                     <div className='flex items-center mt-8'>

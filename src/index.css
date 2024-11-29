@@ -11,6 +11,10 @@ div, h1 {
   overflow-y: visible;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 @font-face {
